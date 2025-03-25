@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "home": "Bosh sahifa",
+    "news": "Yangiliklar",
+    "aboutUzbekistan": "O‘zbekiston haqida",
+    "embassy": "Elchixona",
+    "diplomaticRelations": "Diplomatik aloqalar",
+    "consularServices": "Konsullik xizmatlari",
+    "economicDiplomacy": "Iqtisodiy diplomatiya",
+    "tourism": "Turizm",
+    "contactsForm": "Kontaktlar va murojaat shakli"
+  },
+  "title": "Oʻzbekiston Respublikasining Pokiston \n Islom Respublikasidagi Elchixonasi",
+  "search": "Qidirish",
+  "topics": "Dolzarb mavzular",
+  "latestNews": "So‘nggi yangiliklar",
+  "showMore": "Ko'proq ko'rsatish",
+  "showLess": "Kamroq ko'rsatish",
+  "mediaBlock": "Media yangiliklar",
+  "feedbackTitle": "Murojaat:",
+  "fullName": "F.I.O",
+  "email": "Elektron pochta",
+  "send": "Yuborish",
+  "sending": "yuborilmoqda....",
+  "readMore": "Batafsil o'qish",
+  "chooseCategory": "Kategoriya tanlash",
+  "chooseDate": "Sana tanlash"
+}

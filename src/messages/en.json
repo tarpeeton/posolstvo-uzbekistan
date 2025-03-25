@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "home": "Home",
+    "news": "News",
+    "aboutUzbekistan": "About Uzbekistan",
+    "embassy": "Embassy",
+    "diplomaticRelations": "Diplomatic Relations",
+    "consularServices": "Consular Services",
+    "economicDiplomacy": "Economic Diplomacy",
+    "tourism": "Tourism",
+    "contactsForm": "Contacts & Inquiry Form"
+  },
+  "title": "Embassy of the Republic of Uzbekistan \n in the Islamic Republic of Pakistan",
+  "search": "Search",
+  "topics": "Current Topics",
+  "latestNews": "Latest News",
+  "showMore": "Show more",
+  "showLess": "Show less",
+  "mediaBlock": "Media Block",
+  "feedbackTitle": "Feedback:",
+  "fullName": "Full Name",
+  "email": "Email",
+  "send": "Send",
+  "sending": "Sending....",
+  "readMore": "Read more",
+  "chooseCategory": "Choose category",
+  "chooseDate": "Choose date"
+}
