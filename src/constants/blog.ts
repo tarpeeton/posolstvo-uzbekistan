@@ -19,6 +19,294 @@ export const BLOG_DATA: TBlog[] = [
   },
   {
     title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
+      ru: "Президент Узбекистана принял генерального секретаря ШОС",
+      uz: "O‘zbekiston Prezidenti SHHT Bosh kotibini qabul qildi",
+      en: "President of Uzbekistan received the Secretary-General of the SCO"
+    },
+    slug: "prezident",
+    description: {
+      ru: "Президент Республики Узбекистан Шавкат Мирзиёев 3 марта принял генерального секретаря Шанхайской организации сотрудничества Нуралием Ермекбаевым.",
+      uz: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev 3-mart kuni Shanxay hamkorlik tashkiloti Bosh kotibi Nuraliem Ermekbaevni qabul qildi.",
+      en: "On March 3, the President of the Republic of Uzbekistan, Shavkat Mirziyoyev, received the Secretary-General of the Shanghai Cooperation Organization, Nuraliem Ermekbaev."
+    },
+    imageUrl: "https://ucarecdn.com/1cc202c9-9852-42d5-92b4-9dd8b217a73d/-/preview/820x546/",
+    date: "2024.09.25",
+    viewsCount: 341
+  },
+  {
+    title: {
       ru: "Доложено о проектах международного сотрудничества в сельском хозяйстве",
       uz: "Qishloq xo‘jaligida xalqaro hamkorlik loyihalari haqida ma’lumot berildi",
       en: "A briefing was given on international cooperation projects in agriculture"

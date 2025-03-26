@@ -50,7 +50,7 @@ export const NewsBanner = () => {
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
             <Link
-              href={`/blog/ss`}
+              href={`/news/ss`}
               aria-label={`Slide ${slide.id}`}
               className="flex flex-col-reverse items-start gap-4 
                          lg:flex-row lg:items-center mx-2 lg:mx-0"

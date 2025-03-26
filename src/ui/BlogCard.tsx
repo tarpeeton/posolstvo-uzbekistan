@@ -19,7 +19,7 @@ export const BlogCard = ({ blog, read }: TBlogCardProps) => {
   return (
     <Link
       className="rounded-[4px] h-[550px] relative lg:h-[550px] border border-[#7676823D] flex flex-col"
-      href={`/blog/${blog.slug}`}
+      href={`/news/${blog.slug}`}
     >
       <Image
         src={blog.imageUrl}

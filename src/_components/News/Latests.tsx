@@ -21,6 +21,8 @@ import { YearPicker } from "./YearPicker";
 import { MonthPicker } from "./MonthPicker";
 import { BLOG_CATEGORY } from "@/constants/blog";
 import { formatSelectedDate } from "@/utils/formatSelectedDate";
+import { Pagination  , PaginationContent , PaginationNext , PaginationPrevious } from "@/ui/pagination";
+
 
 type DateRange = { from: Date; to?: Date };
 type DateOrRange = Date | DateRange | undefined;
@@ -38,6 +40,17 @@ export const LatestsNews = () => {
   const [categoryForFilter, setCategoryForFilter] = useState<string>("");
   const activateFilter = (key: string) => setActiveFilter(key);
   const [tempCategory, setTempCategory] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const itemsPerPage = 6;
+  const totalPages = Math.ceil(BLOG_DATA.length / itemsPerPage);
+
+
+  const currentBlogs = BLOG_DATA.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+
 
   useEffect(() => {
     if (activeFilter === "week") {
@@ -81,10 +94,9 @@ export const LatestsNews = () => {
   const handleCategoryApply = () => {
     setCategoryForFilter(tempCategory);
   };
-
   return (
     <section className="mt-[30px] lg:mt-[70px]">
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-col gap-[20px]  md:flex-row md:items-center md:justify-between">
         <p className="title-text">{t("latestNews")}</p>
         <div className="flex flex-row items-center gap-5">
           <Dialog>
@@ -213,9 +225,40 @@ export const LatestsNews = () => {
         </div>
       </div>
       <div className="grid mt-5 lg:mt-6 grid-cols-1 gap-[25px] lg:grid-cols-3 lg:gap-[40px]">
-        {BLOG_DATA.map((blog, index) => (
+        {currentBlogs.map((blog, index) => (
           <BlogCard read={true} key={blog.slug + index} blog={blog} />
         ))}
+      </div>
+
+      <div className="mt-10 flex justify-center">
+        <Pagination>
+          <PaginationPrevious
+            onClick={() =>
+              setCurrentPage((prev) => Math.max(prev - 1, 1))
+            }
+          >
+          </PaginationPrevious>
+          {Array.from({ length: totalPages }).map((_, index) => {
+            const page = index + 1;
+            return (
+              <PaginationContent
+                key={page}
+                active={page === currentPage}
+                onClick={() => setCurrentPage(page)}
+              >
+                {page} 
+              </PaginationContent>
+            );
+          })}
+          <PaginationNext
+            onClick={() =>
+              setCurrentPage((prev) =>
+                Math.min(prev + 1, totalPages)
+              )
+            }
+          >
+          </PaginationNext>
+        </Pagination>
       </div>
     </section>
   );
