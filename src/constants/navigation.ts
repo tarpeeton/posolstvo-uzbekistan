@@ -37,7 +37,7 @@ export type NavItem = {
         }
       ]
       },
-    { key: "aboutUzbekistan", href: "/about" },
+    { key: "aboutUzbekistan", href: "/about-uzbekistan" },
     { key: "embassy", href: "/embassy" },
     { key: "diplomaticRelations", href: "/relations" },
     { key: "consularServices", href: "/consular" },

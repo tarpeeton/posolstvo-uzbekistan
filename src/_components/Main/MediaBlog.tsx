@@ -7,7 +7,7 @@ export const MediaBlog = () => {
   const t = useTranslations();
 
   return (
-    <section className="mt-[60px] md:mt-[100px] px-[20px] lg:px-[120px]">
+    <section className="mt-[60px] md:mt-[100px] ">
       <p className="title-text pb-4 md:pb-6">{t("mediaBlock")}</p>
       <div className="flex flex-col lg:flex-row justify-between">
         <div className="w-full lg:w-[49%] overflow-hidden">
