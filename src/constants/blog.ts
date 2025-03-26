@@ -205,3 +205,23 @@ export const BLOG_DATA: TBlog[] = [
     viewsCount: 341
   },
 ];
+
+
+export const BLOG_CATEGORY = [
+  {
+    name: {
+      ru: "Официальные заявления",
+      uz: "Rasmiy bayonotlar",
+      en: "Official statements",
+    },
+    key: "official-zayavleniya",
+  },
+  {
+    name: {
+      ru: "События и пресс-релизы",
+      uz: "Tadbirlar va matbuot relizlari",
+      en: "Events and press releases",
+    },
+    key: "sobitiya-press-relizi",
+  },
+];

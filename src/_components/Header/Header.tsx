@@ -14,23 +14,26 @@ import Navbar from "./Navigation";
 
 export function Header() {
   const [date, setDate] = useState(new Date());
+  const [mounted, setMounted] = useState(false);
   const locale = useLocale();
   const t = useTranslations();
 
   useEffect(() => {
+    setMounted(true);
     const timer = setInterval(() => setDate(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
 
+  // Only format and render date on the client
   const formattedDate = formatDate(date, locale);
 
   return (
-    <header className="flex flex-col ">
+    <header className="flex flex-col">
       <div className="flex flex-row items-center px-5 lg:px-[120px] border-b border-gray-300 md:justify-between py-3">
         <div className="flex flex-row items-center gap-2">
           <Clock3 />
           <p className="text-[13px] text-[#0B0D22] md:text-[14px]">
-            {formattedDate}
+            {mounted ? formattedDate : null}
           </p>
         </div>
         <div className="hidden md:flex md:flex-row md:items-center gap-5">
@@ -55,7 +58,6 @@ export function Header() {
             height={40}
             className="md:w-[60px] md:h-[55px] object-cover"
           />
-
           <Link
             href={"/"}
             className="text-[#569FFF] text-[12.3px] lg:text-[15px] font-medium whitespace-pre-wrap"
@@ -63,7 +65,7 @@ export function Header() {
             {t("title")}
           </Link>
         </div>
-        <div className="hidden md:flex px-5 flex-row items-center gap-5 ">
+        <div className="hidden md:flex px-5 flex-row items-center gap-5">
           <div className="relative w-[300px]">
             <IoIosSearch
               size={20}
@@ -80,17 +82,17 @@ export function Header() {
         </div>
       </div>
       <div className="relative md:hidden w-full mt-2 px-[20px]">
-            <IoIosSearch
-              size={20}
-              className="absolute left-[30px] top-1/2 -translate-y-1/2 text-gray-500"
-            />
-            <input
-              type="text"
-              placeholder={t("search")}
-              className="w-full h-10 pl-10 pr-3 rounded-md border border-gray-300 text-gray-900 
-                   focus:outline-none focus:border-blue-500 placeholder-gray-400"
-            />
-          </div>
+        <IoIosSearch
+          size={20}
+          className="absolute left-[30px] top-1/2 -translate-y-1/2 text-gray-500"
+        />
+        <input
+          type="text"
+          placeholder={t("search")}
+          className="w-full h-10 pl-10 pr-3 rounded-md border border-gray-300 text-gray-900 
+               focus:outline-none focus:border-blue-500 placeholder-gray-400"
+        />
+      </div>
       {/* <Navbar /> */}
     </header>
   );

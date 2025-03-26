@@ -48,9 +48,9 @@ function Calendar({
           "size-8 p-0 font-normal aria-selected:opacity-100"
         ),
         day_range_start:
-          "day-range-start aria-selected:bg-primary aria-selected:text-white",
+          "day-range-start aria-selected:bg-[#006FFF] aria-selected:text-white",
         day_range_end:
-          "day-range-end aria-selected:bg-primary aria-selected:text-white",
+          "day-range-end aria-selected:bg-[#006FFF] aria-selected:text-white",
         day_selected:
           "bg-[#006FFF] text-white font-medium rounded-[4px]",
         day_today: "bg-[#006FFF] text-white font-medium rounded-[4px]",
@@ -58,7 +58,7 @@ function Calendar({
           "day-outside text-muted-foreground aria-selected:text-white",
         day_disabled: "text-muted-foreground opacity-50",
         day_range_middle:
-          "aria-selected:bg-accent aria-selected:text-white",
+          "aria-selected:bg-[#5790db] aria-selected:text-white",
         day_hidden: "invisible",
         ...classNames,
       }}
