@@ -91,7 +91,7 @@ export function Header() {
                    focus:outline-none focus:border-blue-500 placeholder-gray-400"
             />
           </div>
-      <Navbar />
+      {/* <Navbar /> */}
     </header>
   );
 }
