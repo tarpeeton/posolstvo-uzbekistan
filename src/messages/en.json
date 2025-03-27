@@ -28,6 +28,9 @@
   "apply": "Apply",
   "relatedNews": "Related News",
   "general_information": "General Information about the Republic of Uzbekistan",
-  "about_description": "The Republic of Uzbekistan is located in Central Asia and covers an area of 448.9 thousand sq. km. The territory of the republic extends 1425 kilometers from west to east and 930 kilometers from north to south.\nThe territory borders Kazakhstan to the north and northeast, Kyrgyzstan and Tajikistan to the east and southeast, Turkmenistan to the west, and Afghanistan to the south. The total length of the state border is 6221 kilometers. The border lengths are as follows: with Afghanistan – 137 km, with Kazakhstan – 2203 km, with Kyrgyzstan – 1099 km, with Tajikistan – 1161 km, and with Turkmenistan – 1621 km. (Administrative-territorial division of the Republic of Uzbekistan).\nThe Republic of Uzbekistan gained its independence on September 1, 1991. To date, our country has established diplomatic relations with 134 states around the world. In the city of Tashkent, there are 45 embassies and consulates of foreign countries, as well as several representations of international organizations and trade houses. You can learn about Uzbekistan's diplomatic missions abroad by following the link below."
+  "welcome_uzbekistan": "Welcome to Uzbekistan!",
+  "historyCulture": "Culture of Uzbekistan",
+  "culturalHeritage": "Cultural Heritage of Uzbekistan",
+  "interestingFacts": "Interesting Facts"
 
 }

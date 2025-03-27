@@ -3,6 +3,9 @@ import { LatestNews } from "./LatestNews";
 import { MediaBlog } from "./MediaBlog";
 import { EmbassySwiper } from "./Slider";
 import { ThemeContent } from "./Theme";
+import { MEDIA_BLOG } from "@/constants/media-blog";
+
+
 
 export const MainPage = () => {
   return (
@@ -13,7 +16,7 @@ export const MainPage = () => {
       <div className="px-[20px] lg:px-[120px]">
         <MediaBlog />
       </div>
-      <EmbassySwiper />
+      <EmbassySwiper slides={MEDIA_BLOG} />
     </div>
   );
 };

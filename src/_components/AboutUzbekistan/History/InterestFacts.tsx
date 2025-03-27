@@ -1,26 +1,20 @@
 "use client";
 
-import { FC, useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 
-interface SlideData {
-  url: string;
-  alt?: string;
-}
+import { useTranslations } from "next-intl";
+import { MEDIA_BLOG } from "@/constants/media-blog";
 
-interface EmbassySwiperProps {
-  slides: SlideData[];
-}
-
-export const EmbassySwiper: FC<EmbassySwiperProps> = ({ slides }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+export const InterestFacts = () => {
+  const t = useTranslations();
   return (
-    <section className="w-full h-[400px] md:h-[500px] mt-15 lg:mt-[200px]">
+    <section className="px-[20px] lg:px-[120px] pb-[100px] lg:pb-[150px]">
+      <h3 className="title-text mb-4 lg:mb-6">{t("interestingFacts")}</h3>
       <Swiper
         modules={[Navigation, Autoplay]}
         slidesPerView={1.3}
@@ -31,7 +25,7 @@ export const EmbassySwiper: FC<EmbassySwiperProps> = ({ slides }) => {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 2.9,
+            slidesPerView: 3,
             spaceBetween: 40,
           },
         }}
@@ -39,10 +33,8 @@ export const EmbassySwiper: FC<EmbassySwiperProps> = ({ slides }) => {
         loop
         navigation
         spaceBetween={40}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
-        {slides.map((slide, index) => {
-          const isActive = index === activeIndex;
+        {MEDIA_BLOG.map((slide, index) => {
           return (
             <SwiperSlide
               key={index}
@@ -50,14 +42,14 @@ export const EmbassySwiper: FC<EmbassySwiperProps> = ({ slides }) => {
             >
               <div
                 className={`
-                  flex items-center justify-center w-full 
-                  transition-all duration-300
-                  ${isActive ? "h-[320px] scale-105" : "h-[250px] scale-100 mt-[48px]"}
-                `}
+                             flex items-center lg:h-[320px] justify-center w-full 
+                             transition-all duration-300
+                           
+                           `}
               >
                 <Image
                   src={slide.url}
-                  alt={slide.alt || "image"}
+                  alt={slide.url || "image"}
                   width={1000}
                   height={1000}
                   quality={100}

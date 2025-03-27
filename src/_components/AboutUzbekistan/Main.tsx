@@ -1,9 +1,11 @@
-"use client"
+"use client";
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-
+import { ActualTheme } from "./ActualTheme";
+import { MEDIA_BLOG } from "@/constants/media-blog";
+import { EmbassySwiper } from "../Main/Slider";
+import { WelComeUzbekistan } from "./WelcomeUzbekistan";
 const rawHTML = `
 Республика Узбекистан расположена в Центральной Азии и занимает площадь 448,9 тыс. кв. км. Протяженность территории республики с запада на восток – 1425 километров, с севера на юг – 930 километров.<br /><br />
 Территория на севере и северо-востоке граничит с Казахстаном, на востоке и юго-востоке – с Кыргызстаном и Таджикистаном, на западе — с Туркменистаном, на юге – с Афганистаном. Общая длина государственной границы составляет 6221 километр. Протяженность границ с Афганистаном – 137 км., с Казахстаном – 2203 км., с Кыргызстаном – 1099 км., с Таджикистаном – 1161 км. и с Туркменистаном – 1621 км. 
@@ -33,8 +35,8 @@ export const AboutUzbekistanMain = () => {
             {
               label: {
                 ru: "О Узбекистане",
-                uz: "",
-                en: "",
+                uz: "O‘zbekiston haqida",
+                en: "About Uzbekistan",
               },
               href: "/about-uzbekistan",
               isCurrent: true,
@@ -43,7 +45,9 @@ export const AboutUzbekistanMain = () => {
         />
 
         <div className="flex flex-col gap-[16px]">
-          <h1 className="lg:text-[32px] w-[40%]">{t("general_information")}</h1>
+          <h1 className="lg:text-[32px] text-[28px] md:w-[40%]">
+            {t("general_information")}
+          </h1>
           <p
             className="lg:text-[15px] whitespace-pre-wrap"
             dangerouslySetInnerHTML={{ __html: rawHTML }}
@@ -60,6 +64,9 @@ export const AboutUzbekistanMain = () => {
           </div>
         </div>
       </div>
+      <ActualTheme />
+            <EmbassySwiper slides={MEDIA_BLOG} />
+            <WelComeUzbekistan />
     </div>
   );
 };
