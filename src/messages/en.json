@@ -43,9 +43,10 @@
   "president_of_uzbekistan": "President of the Republic of Uzbekistan",
   "strategy_title": "Uzbekistan-2030 Strategy",
   "strategy_title_question": " What is the Uzbekistan 2030 Strategy ?",
-   "strategy_title_qwest": "Goals and objectives:",
-   "priorityDirections": "Priority directions of the Strategy:"
-
- 
-
+  "strategy_title_qwest": "Goals and objectives:",
+  "priorityDirections": "Priority directions of the Strategy:",
+  "ambassador_message": "Ambassador's message",
+  "ambassador_video_message": "Ambassador's video message",
+  "staff": "Staff",
+  "departments": "Departments"
 }
