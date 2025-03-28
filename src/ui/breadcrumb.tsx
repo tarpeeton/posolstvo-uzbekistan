@@ -34,7 +34,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
               <ChevronRight className="mx-1 h-4 w-4" aria-hidden="true" />
             )}
             {item.href && !isLast ? (
-              <Link href={item.href} className="hover:underline">
+              <Link href={item.href} className="hover:underline ">
                 {item.label[locale]}
               </Link>
             ) : (
