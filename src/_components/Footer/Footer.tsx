@@ -8,7 +8,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { IoLinkSharp } from "react-icons/io5";
 import { useState, ChangeEvent } from "react";
 import axios from "axios";
 
@@ -20,7 +19,7 @@ type IFormType = {
 export const Footer = () => {
   const t = useTranslations();
   const locale = useLocale();
-  const [sending , setSending] = useState(false)
+  const [sending, setSending] = useState(false);
 
   const [formData, setFormData] = useState<IFormType>({
     fullName: "",
@@ -34,16 +33,15 @@ export const Footer = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSending(true)
+    setSending(true);
     try {
       const response = await axios.post("/api/feedback", formData);
       console.log("Response:", response.data);
       setFormData({ fullName: "", email: "" });
-      setSending(false)
+      setSending(false);
     } catch (error) {
       console.error("Error submitting form:", error);
-      setSending(false)
-
+      setSending(false);
     }
   };
 
@@ -68,9 +66,13 @@ export const Footer = () => {
               {t("title")}
             </Link>
           </div>
-          <div className="flex flex-col gap-[18px] lg:mt-[60px]">
+          <div className="flex flex-col gap-[18px] lg:mt-[60px] mt-[25px]">
             <p className="text-title text-[20px] text-white">
-              {locale === "ru" ? "Контакты:" : locale === "uz" ? "" : ""}
+              {locale === "ru"
+                ? "Контакты:"
+                : locale === "uz"
+                ? "Aloqa:"
+                : "Contacts:"}
             </p>
             <div className="flex flex-col gap-[10px]">
               <div className="flex flex-row gap-[8px] items-center ">
@@ -96,10 +98,14 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row gap-10 lg:mt-[50px] ">
+          <div className="flex flex-row gap-10 lg:mt-[50px] mt-[25px] ">
             <div>
               <p className="text-title text-[20px] text-white">
-                {locale === "ru" ? "Соцсети" : locale === "uz" ? "" : ""}
+                {locale === "ru"
+                  ? "Соцсети"
+                  : locale === "uz"
+                  ? "Ijtimoiy tarmoqlar"
+                  : "Social Media"}
               </p>
               <div className="flex flex-col gap-[10px] mt-[18px]">
                 <div className="flex flex-row gap-[8px] items-center ">
@@ -124,37 +130,10 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <p className="text-title text-[20px] text-white">
-                {locale === "ru" ? "Быстрые ссылки" : locale === "uz" ? "" : ""}
-              </p>
-              <div className="flex flex-col gap-[10px] mt-[18px]">
-                <div className="flex flex-row gap-[8px] items-center ">
-                  <div className="rounded-[5px] flex items-center justify-center w-[36px] h-[36px]  bg-[#25262F] ">
-                    <IoLinkSharp className="text-white" />
-                  </div>
-                  <p className="text-white font-medium">линк куда-то</p>
-                </div>
-                <div className="flex flex-row gap-[8px] items-center ">
-                  <div className="rounded-[5px] flex items-center justify-center w-[36px] h-[36px]  bg-[#25262F] ">
-                    <IoLinkSharp className="text-white" />
-                  </div>
-                  <p className="text-white font-medium">линк куда-то</p>
-                </div>
-                <div className="flex flex-row gap-[8px] items-center ">
-                  <div className="rounded-[5px] flex items-center justify-center w-[36px] h-[36px]  bg-[#25262F] ">
-                    <IoLinkSharp className="text-white" />
-                  </div>
-                  <p className="text-white font-medium whitespace-pre-wrap">
-                    линк куда-то
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* QR CODE */}
-          <div className="flex flex-row items-center gap-10 lg:mt-[50px]">
+          <div className="flex flex-row mt-[25px] items-center gap-10 lg:mt-[50px]">
             <div className="border p-5  border-white rounded-[20px]">
               <Image
                 width={100}
@@ -187,7 +166,7 @@ export const Footer = () => {
               Pakistan
             </p>
           </div>
-          <div className="flex flex-col gap-5 md:mt-[40px]">
+          <div className="flex flex-col mt-[25px] gap-5 md:mt-[40px]">
             <p className="text-[20px] text-white font-medium">
               {t("feedbackTitle")}
             </p>
@@ -213,7 +192,7 @@ export const Footer = () => {
                   type="submit"
                   className="text-[16px] rounded-[4px] text-white bg-[#427EFF] font-medium text-center h-[50px] hover:bg-[#4255ff]"
                 >
-                  {sending ? t("sending") : t("send") } 
+                  {sending ? t("sending") : t("send")}
                 </button>
               </form>
             </div>
