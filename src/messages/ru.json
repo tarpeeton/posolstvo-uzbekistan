@@ -50,5 +50,23 @@
   "staff": "Сотрудники",
   "departments": "Отделы",
   "mission_history": "История миссии",
-  "historical_documents": "Исторические документы"
+  "historical_documents": "Исторические документы",
+  "document_title": "Документы",
+  "official_documents": "Официальные документы",
+  "contact_with_ambassador": "Связь с послом",
+  "write_or_ask_ambassador": "Напишите послу или задайте вопрос",
+  "full_name": "ФИО",
+  "phone_number": "Номер телефона",
+  "subject": "Тема обращения",
+  "your_message": "Задайте вопрос",
+  "attach_file": "Прикрепить файл",
+  "errors": {
+    "required": {
+      "fullName": "Пожалуйста, введите ФИО",
+      "email": "Введите корректный email",
+      "phone": "Укажите номер телефона",
+      "subject": "Укажите тему обращения",
+      "message": "Введите сообщение"
+    }
+  }
 }

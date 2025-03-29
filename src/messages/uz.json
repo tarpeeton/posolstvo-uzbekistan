@@ -30,12 +30,12 @@
   "general_information": "O‘zbekiston Respublikasi haqida umumiy ma’lumot",
   "welcome_uzbekistan": "O'zbekistonga xush kelibsiz!",
   "historyCulture": "O‘zbekiston madaniyati",
-   "culturalHeritage": "O‘zbekistonning madaniy merosi",
-   "interestingFacts": "Qiziqarli faktlar",
-   "state_symbol_title": "Davlat ramzlari",
-   "stateEmblem": "O‘zbekiston Respublikasi davlat gerbi",
-   "stateFlag": "O‘zbekiston Respublikasi davlat bayrog‘i",
-   "stateAnthem": "O‘zbekiston Respublikasi davlat himni",
+  "culturalHeritage": "O‘zbekistonning madaniy merosi",
+  "interestingFacts": "Qiziqarli faktlar",
+  "state_symbol_title": "Davlat ramzlari",
+  "stateEmblem": "O‘zbekiston Respublikasi davlat gerbi",
+  "stateFlag": "O‘zbekiston Respublikasi davlat bayrog‘i",
+  "stateAnthem": "O‘zbekiston Respublikasi davlat himni",
   "listening": "Tinglash",
   "download": "Yuklab olish (2.4mb)",
   "president_and_government": "Prezident va hukumat",
@@ -43,18 +43,30 @@
   "president_of_uzbekistan": "Oʻzbekiston Respublikasi Prezidenti",
   "strategy_title": "O'zbekiston-2030 Strategiyasi",
   "strategy_title_question": "Oʻzbekiston — 2030» strategiyasi nima ?",
- "strategy_title_qwest": "Maqsad va vazifalar:",
+  "strategy_title_qwest": "Maqsad va vazifalar:",
   "priorityDirections": "Strategiyaning ustuvor yo'nalishlari:",
   "ambassador_message": "Elchining murojaati",
   "ambassador_video_message": "Elchining video murojaati",
-   "staff": "Xodimlar",
-   "departments": "Bo‘limlar",
-   "mission_history": "Missiya tarixi",
-   "historical_documents": "Tarixiy hujjatlar"
-
-
-
-
-   
-
+  "staff": "Xodimlar",
+  "departments": "Bo‘limlar",
+  "mission_history": "Missiya tarixi",
+  "historical_documents": "Tarixiy hujjatlar",
+  "document_title": "Xujjatlar",
+  "official_documents": "Rasmiy Xujjatlar",
+  "contact_with_ambassador": "Elchi bilan aloqa",
+  "write_or_ask_ambassador": "Elchiga yozing yoki savol bering",
+  "full_name": "To'liq ism",
+  "phone_number": "Telefon raqami",
+  "subject": "Murojaat mavzusi",
+  "your_message": "Savolingizni yozing",
+  "attach_file": "Faylni biriktirish",
+  "errors": {
+    "required": {
+      "fullName": "Iltimos, to'liq ismingizni kiriting",
+      "email": "To'g'ri email kiriting",
+      "phone": "Telefon raqamingizni kiriting",
+      "subject": "Murojaat mavzusini kiriting",
+      "message": "Xabaringizni kiriting"
+    }
+  }
 }

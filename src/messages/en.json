@@ -50,5 +50,23 @@
   "staff": "Staff",
   "departments": "Departments",
   "mission_history": "Mission history",
-   "historical_documents": "Historical documents"
+  "historical_documents": "Historical documents",
+  "document_title": "Documents",
+  "official_documents": "Official Documents",
+  "contact_with_ambassador": "Contact with the Ambassador",
+  "write_or_ask_ambassador": "Write to the Ambassador or ask a question",
+  "full_name": "Full Name",
+  "phone_number": "Phone Number",
+  "subject": "Subject",
+  "your_message": "Enter your message",
+  "attach_file": "Attach file",
+  "errors": {
+    "required": {
+      "fullName": "Please enter your full name",
+      "email": "Please enter a valid email",
+      "phone": "Please enter your phone number",
+      "subject": "Please enter the subject",
+      "message": "Please enter your message"
+    }
+  }
 }
