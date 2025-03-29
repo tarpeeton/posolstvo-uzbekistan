@@ -69,9 +69,18 @@
       "message": "Введите сообщение"
     }
   },
-    "diplomatic_relations": "Дипломатические отношения",
-    "relations_history_title": "История сотрудничества",
-    "political_relations_title": "Политические отношения",
-    "economic_relations_title": "Экономические связи",
-    "cultural_relations_title": "Культурные связи"
+  "diplomatic_relations": "Дипломатические отношения",
+  "relations_history_title": "История сотрудничества",
+  "political_relations_title": "Политические отношения",
+  "economic_relations_title": "Экономические связи",
+  "cultural_relations_title": "Культурные связи",
+  "consular_relations_title": "Консульские услуги",
+  "consular_visas_title": "Визы",
+  "application_forms_title": "Формы заявлений",
+  "visa_application_process_title": "Процесс подачи заявления на визу",
+  "consular_passport_title": "Паспортные услуги",
+  "required_documents_title": "Необходимые документы",
+  "consular_passport_description": "Посольство Республики Узбекистан в Пакистане предоставляет гражданам Узбекистана различные паспортные услуги, включая оформление нового паспорта, продление его срока действия и выдачу документов на возвращение на родину.",
+   "DOCUMENT_LEGALIZATION": "Легализация документов",
+  "DOCUMENT_LIST_REQUIRED": "Список необходимых документов"
 }

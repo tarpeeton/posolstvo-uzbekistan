@@ -69,9 +69,18 @@
       "message": "Please enter your message"
     }
   },
-    "diplomatic_relations": "Diplomatic Relations",
-    "relations_history_title": "History of Cooperation",
-    "political_relations_title": "Political Relations",
-    "economic_relations_title": "Economic Relations",
-    "cultural_relations_title": "Cultural Relations"
+  "diplomatic_relations": "Diplomatic Relations",
+  "relations_history_title": "History of Cooperation",
+  "political_relations_title": "Political Relations",
+  "economic_relations_title": "Economic Relations",
+  "cultural_relations_title": "Cultural Relations",
+  "consular_relations_title": "Consular Services",
+  "consular_visas_title": "Visas",
+  "application_forms_title": "Application Forms",
+  "visa_application_process_title": "Visa Application Process",
+  "consular_passport_title": "Passport Services",
+  "required_documents_title": "Required Documents",
+  "consular_passport_description": "The Embassy of the Republic of Uzbekistan in Pakistan provides various passport services to Uzbek citizens, including the issuance of new passports, extension of passport validity, and documents for returning to Uzbekistan.",
+  "DOCUMENT_LEGALIZATION": "Document Legalization",
+  "DOCUMENT_LIST_REQUIRED": "List of Required Documents"
 }

@@ -72,6 +72,16 @@
   "diplomatic_relations": "Diplomatik aloqalar",
   "relations_history_title": "Hamkorlik tarixi",
   "political_relations_title": "Siyosiy munosabatlar",
-   "economic_relations_title": "Iqtisodiy aloqalar",
-   "cultural_relations_title": "Madaniy aloqalar"
+  "economic_relations_title": "Iqtisodiy aloqalar",
+  "cultural_relations_title": "Madaniy aloqalar",
+  "consular_relations_title": "Konsullik xizmatlari",
+  "consular_visas_title": "Vizalar",
+  "application_forms_title": "Ariza blankalari",
+  "visa_application_process_title": "Viza uchun ariza topshirish jarayoni",
+  "consular_passport_title": "Pasport xizmatlari",
+  "required_documents_title": "Zarur hujjatlar",
+  "consular_passport_description": "O‘zbekiston Respublikasining Pokistondagi Elchixonasi O‘zbekiston fuqarolariga yangi pasport rasmiylashtirish, uning amal qilish muddatini uzaytirish va vatanga qaytish uchun zarur hujjatlarni taqdim etish kabi turli pasport xizmatlarini ko‘rsatadi.",
+  "DOCUMENT_LEGALIZATION": "Hujjatlarni legallashtirish",
+  "DOCUMENT_LIST_REQUIRED": "Kerakli hujjatlar ro'yxati"
+
 }
