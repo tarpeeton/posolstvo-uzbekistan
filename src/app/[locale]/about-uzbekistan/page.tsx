@@ -3,8 +3,8 @@ import { AboutUzbekistanMain } from "@/_components/AboutUzbekistan/Main";
 
 export default function AboutUzb() {
   return (
-    <div>
+    <main>
      <AboutUzbekistanMain />
-    </div>
+    </main>
   );
 }

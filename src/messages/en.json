@@ -68,5 +68,8 @@
       "subject": "Please enter the subject",
       "message": "Please enter your message"
     }
-  }
+  },
+    "diplomatic_relations": "Diplomatic Relations",
+    "relations_history_title": "History of Cooperation",
+    "political_relations_title": "Political Relations"
 }

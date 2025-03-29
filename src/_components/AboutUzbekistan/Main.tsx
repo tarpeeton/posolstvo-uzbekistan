@@ -6,6 +6,7 @@ import { ActualTheme } from "./ActualTheme";
 import { MEDIA_BLOG } from "@/constants/media-blog";
 import { EmbassySwiper } from "../Main/Slider";
 import { WelComeUzbekistan } from "./WelcomeUzbekistan";
+
 const rawHTML = `
 Республика Узбекистан расположена в Центральной Азии и занимает площадь 448,9 тыс. кв. км. Протяженность территории республики с запада на восток – 1425 километров, с севера на юг – 930 километров.<br /><br />
 Территория на севере и северо-востоке граничит с Казахстаном, на востоке и юго-востоке – с Кыргызстаном и Таджикистаном, на западе — с Туркменистаном, на юге – с Афганистаном. Общая длина государственной границы составляет 6221 километр. Протяженность границ с Афганистаном – 137 км., с Казахстаном – 2203 км., с Кыргызстаном – 1099 км., с Таджикистаном – 1161 км. и с Туркменистаном – 1621 км. 
@@ -20,7 +21,7 @@ const rawHTML = `
 export const AboutUzbekistanMain = () => {
   const t = useTranslations();
   return (
-    <div>
+    <section>
       <div className="px-[20px] lg:px-[120px] flex flex-col gap-[25px] lg:gap-[48px] mt-[20px]">
         <Breadcrumb
           items={[
@@ -67,6 +68,6 @@ export const AboutUzbekistanMain = () => {
       <ActualTheme />
             <EmbassySwiper slides={MEDIA_BLOG} />
             <WelComeUzbekistan />
-    </div>
+    </section>
   );
 };

@@ -68,5 +68,8 @@
       "subject": "Укажите тему обращения",
       "message": "Введите сообщение"
     }
-  }
+  },
+    "diplomatic_relations": "Дипломатические отношения",
+    "relations_history_title": "История сотрудничества",
+    "political_relations_title": "Политические отношения"
 }

@@ -68,5 +68,8 @@
       "subject": "Murojaat mavzusini kiriting",
       "message": "Xabaringizni kiriting"
     }
-  }
+  },
+  "diplomatic_relations": "Diplomatik aloqalar",
+  "relations_history_title": "Hamkorlik tarixi",
+  "political_relations_title": "Siyosiy munosabatlar"
 }
