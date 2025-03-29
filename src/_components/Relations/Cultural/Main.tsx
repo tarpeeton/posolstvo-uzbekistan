@@ -2,9 +2,9 @@ import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 import { EmbassySwiper } from "@/_components/Main/Slider";
 import { MEDIA_BLOG } from "@/constants/media-blog";
-import { POLITICAL_CONTENT } from "@/constants/political";
+import { CULTURAL_CONTENT } from "@/constants/cultural";
 
-export const RelationsPolitical = () => {
+export const CulturalMain = () => {
   const t = useTranslations();
   const locale = useLocale();
 
@@ -31,9 +31,9 @@ export const RelationsPolitical = () => {
             },
             {
               label: {
-                ru: "Политические отношения",
-                uz: "Siyosiy munosabatlar",
-                en: "Political Relations",
+                ru: "Культурные связи",
+                uz: "Madaniy aloqalar",
+                en: "Cultural Relations",
               },
               isCurrent: true,
             },
@@ -42,16 +42,16 @@ export const RelationsPolitical = () => {
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1
-            aria-label={t("political_relations_title")}
+            aria-label={t("cultural_relations_title")}
             className="text-[24px] lg:text-[32px]"
           >
-            {t("political_relations_title")}
+            {t("cultural_relations_title")}
           </h1>
           {/* CONTENT */}
           <div>
             <div
               className="lg:text-[16px]"
-              dangerouslySetInnerHTML={{ __html: POLITICAL_CONTENT[0][locale] }}
+              dangerouslySetInnerHTML={{ __html: CULTURAL_CONTENT[locale] }}
             />
           </div>
         </div>

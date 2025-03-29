@@ -3,7 +3,6 @@ import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 import { EmbassySwiper } from "@/_components/Main/Slider";
 import { MEDIA_BLOG } from "@/constants/media-blog";
-import { POLITICAL_CONTENT } from "@/constants/political";
 import { ECONOMICAL_CONTENT } from "@/constants/economic";
 
 
