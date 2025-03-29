@@ -9,7 +9,7 @@ export const RelationsMain = () => {
   const locale = useLocale();
 
   return (
-    <section className="px-[20px] lg:px-[120px] mt-[24px]">
+    <section className="px-[20px] lg:px-[120px] mt-[24px] pb-[80px] lg:pb-[120px]">
       <Breadcrumb
         items={[
           {

@@ -51,7 +51,7 @@ export const RelationsPolitical = () => {
            {/* CONTENT */}
         <div>
           <div
-            className="lg:text-[16px] whitespace-pre-wrap"
+            className="lg:text-[16px]"
             dangerouslySetInnerHTML={{ __html: POLITICAL_CONTENT[0][locale] }}
           />
         </div>

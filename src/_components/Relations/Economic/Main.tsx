@@ -1,10 +1,14 @@
+
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
-import { CONTENT_RELATION_HTML, RELATION_HISTORY } from "@/constants/relations";
 import { EmbassySwiper } from "@/_components/Main/Slider";
 import { MEDIA_BLOG } from "@/constants/media-blog";
+import { POLITICAL_CONTENT } from "@/constants/political";
+import { ECONOMICAL_CONTENT } from "@/constants/economic";
 
-export const RelationsHistoryMain = () => {
+
+
+export const RelationsEconomic = () => {
   const t = useTranslations();
   const locale = useLocale();
 
@@ -31,33 +35,31 @@ export const RelationsHistoryMain = () => {
             },
             {
               label: {
-                ru: "История сотрудничества",
-                uz: "Hamkorlik tarixi",
-                en: "History of Cooperation",
+                ru: "Экономические связи",
+                uz: "Iqtisodiy aloqalar",
+                en: "Economic Relations",
               },
               isCurrent: true,
             },
           ]}
         />
 
-        <div className="mt-[24px] lg:mt-[45px]">
+        <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1
-            aria-label={t("relations_history_title")}
+            aria-label={t("economic_relations_title")}
             className="text-[24px] lg:text-[32px]"
           >
-            {t("relations_history_title")}
+            {t("economic_relations_title")}
           </h1>
-          <article className="mt-[16px] ">
-            <p className="text-[16px]">{RELATION_HISTORY[locale]}</p>
-          </article>
-        </div>
-        {/* CONTENT */}
-        <div className="mt-[70px] lg:mt-[36px]">
-          <span
-            className="lg:text-[16px] "
-            dangerouslySetInnerHTML={{ __html: CONTENT_RELATION_HTML[locale] }}
+           {/* CONTENT */}
+        <div>
+          <div
+            className="lg:text-[16px]"
+            dangerouslySetInnerHTML={{ __html: ECONOMICAL_CONTENT[locale] }}
           />
         </div>
+        </div>
+       
       </section>
       <EmbassySwiper slides={MEDIA_BLOG} />
     </>
