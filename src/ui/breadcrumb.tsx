@@ -24,7 +24,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
   const locale = useLocale() as keyof TMultiLang
 
   return (
-    <nav className="flex items-center space-x-1 text-sm text-muted-foreground">
+    <nav className="flex flex-row flex-wrap items-center space-x-1 text-sm text-muted-foreground">
       {items.map((item, index) => {
         const isLast = index === items.length - 1
 
@@ -34,13 +34,13 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
               <ChevronRight className="mx-1 h-4 w-4" aria-hidden="true" />
             )}
             {item.href && !isLast ? (
-              <Link href={item.href} className="hover:underline ">
+              <Link href={item.href} className="hover:underline text-[12px] lg:text-[14px] ">
                 {item.label[locale]}
               </Link>
             ) : (
               <span
                 aria-current={item.isCurrent ? "page" : undefined}
-                className={item.isCurrent ? "font-semibold" : ""}
+                className={item.isCurrent ? "font-semibold text-[12px] lg:text-[14px]" : "text-[12px] lg:text-[14px] "}
               >
                 {item.label[locale]}
               </span>

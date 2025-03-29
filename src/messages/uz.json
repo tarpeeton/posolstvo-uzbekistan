@@ -82,6 +82,7 @@
   "required_documents_title": "Zarur hujjatlar",
   "consular_passport_description": "O‘zbekiston Respublikasining Pokistondagi Elchixonasi O‘zbekiston fuqarolariga yangi pasport rasmiylashtirish, uning amal qilish muddatini uzaytirish va vatanga qaytish uchun zarur hujjatlarni taqdim etish kabi turli pasport xizmatlarini ko‘rsatadi.",
   "DOCUMENT_LEGALIZATION": "Hujjatlarni legallashtirish",
-  "DOCUMENT_LIST_REQUIRED": "Kerakli hujjatlar ro'yxati"
+  "DOCUMENT_LIST_REQUIRED": "Kerakli hujjatlar ro'yxati",
+  "registration_title": "Konsullik ro‘yxatga olish"
 
 }

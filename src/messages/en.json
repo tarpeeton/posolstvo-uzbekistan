@@ -82,5 +82,6 @@
   "required_documents_title": "Required Documents",
   "consular_passport_description": "The Embassy of the Republic of Uzbekistan in Pakistan provides various passport services to Uzbek citizens, including the issuance of new passports, extension of passport validity, and documents for returning to Uzbekistan.",
   "DOCUMENT_LEGALIZATION": "Document Legalization",
-  "DOCUMENT_LIST_REQUIRED": "List of Required Documents"
+  "DOCUMENT_LIST_REQUIRED": "List of Required Documents",
+  "registration_title": "Consular Registration"
 }
