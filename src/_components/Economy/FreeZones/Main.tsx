@@ -2,8 +2,9 @@ import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 import { GoDownload } from "react-icons/go";
 import { PASSPORT_CONTENT, PASSPORT_QUESTION } from "@/constants/passport";
+import { FREE_ZONES } from "@/constants/free-zone";
 
-export const PassportMain = () => {
+export const FreeZonesMain = () => {
   const t = useTranslations();
   const locale = useLocale();
 
@@ -22,17 +23,18 @@ export const PassportMain = () => {
             },
             {
               label: {
-                ru: "Консульские услуги",
-                uz: "Konsullik xizmatlari",
-                en: "Consular Services",
+                ru: "Экономическая дипломатия",
+                uz: "Iqtisodiy diplomatiya",
+                en: "Economic Diplomacy",
               },
-              href: "/consular",
+              href: "/economy",
+
             },
             {
               label: {
-                ru: "Паспортные услуги",
-                uz: "Pasport xizmatlari",
-                en: "Passport Services",
+                ru: "Свободные экономические зоны",
+                uz: "Erkin iqtisodiy zonalar",
+                en: "Free Economic Zones",
               },
               isCurrent: true,
             },
@@ -41,10 +43,10 @@ export const PassportMain = () => {
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1
-            aria-label={t("consular_passport_title")}
+            aria-label={t("free_economic_zones")}
             className="text-[24px] lg:text-[32px]"
           >
-            {t("consular_passport_title")}
+            {t("free_economic_zones")}
           </h1>
           <p className="text-[15px] mt-2">
             {t("consular_passport_description")}
@@ -54,23 +56,10 @@ export const PassportMain = () => {
         <div className="mt-[20px] lg:mt-[30px]">
           <p
             className="lg:text-[15px] "
-            dangerouslySetInnerHTML={{ __html: PASSPORT_CONTENT[locale] }}
+            dangerouslySetInnerHTML={{ __html: FREE_ZONES[locale] }}
           />
         </div>
 
-        
-        <div className="rounded mt-[40px] bg-[#DEDEE2] py-[30px] px-[20px] lg:px-[40px] flex flex-col gap-[16px]">
-          <p className="text-[20px] font-medium">
-            {PASSPORT_QUESTION[locale].description}
-          </p>
-          <div
-            className="text-[15px]"
-            dangerouslySetInnerHTML={{
-              __html: PASSPORT_QUESTION[locale].content,
-            }}
-          />
-          <p className="text-[15px]">{PASSPORT_QUESTION[locale].note}</p>
-        </div>
 
         <a
           href="/documents/mission-history.pdf"
