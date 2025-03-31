@@ -58,12 +58,16 @@
   "full_name": "Full Name",
   "phone_number": "Phone Number",
   "subject": "Subject",
+  "first_name": "First name",
+  "last_name": "Last name",
   "your_message": "Enter your message",
   "attach_file": "Attach file",
   "errors": {
     "required": {
+      "firstName": "'First name' is required",
+      "lastName": "'Last name' is required",
       "fullName": "Please enter your full name",
-      "email": "Please enter a valid email",
+      "email": "Please enter a valid email address",
       "phone": "Please enter your phone number",
       "subject": "Please enter the subject",
       "message": "Please enter your message"
@@ -94,5 +98,7 @@
   "tourism": "Tourism",
   "heritage": "Heritage",
   "landmarks": "Landmarks",
-  "tourist_routes": "Tourist routes"
+  "tourist_routes": "Tourist routes",
+  "contacts_and_form": "Contacts and inquiry form",
+  "mfa_hotline": "Hotline of the Ministry of Foreign Affairs of the Republic of Uzbekistan:"
 }

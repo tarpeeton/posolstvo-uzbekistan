@@ -58,15 +58,19 @@
   "full_name": "To'liq ism",
   "phone_number": "Telefon raqami",
   "subject": "Murojaat mavzusi",
+  "first_name": "Ism",
+  "last_name": "Familiya",
   "your_message": "Savolingizni yozing",
   "attach_file": "Faylni biriktirish",
   "errors": {
     "required": {
-      "fullName": "Iltimos, to'liq ismingizni kiriting",
-      "email": "To'g'ri email kiriting",
-      "phone": "Telefon raqamingizni kiriting",
-      "subject": "Murojaat mavzusini kiriting",
-      "message": "Xabaringizni kiriting"
+      "firstName": "'Ism' maydoni majburiy",
+      "lastName": "'Familiya' maydoni majburiy",
+      "fullName": "Iltimos, to‘liq ismingizni kiriting",
+      "email": "Iltimos, to‘g‘ri email manzilini kiriting",
+      "phone": "Iltimos, telefon raqamingizni kiriting",
+      "subject": "Iltimos, murojaat mavzusini kiriting",
+      "message": "Iltimos, xabaringizni kiriting"
     }
   },
   "diplomatic_relations": "Diplomatik aloqalar",
@@ -94,5 +98,7 @@
   "tourism": "Turizm",
   "heritage": "Meros",
   "landmarks": "Diqqatga sazovor joylar",
-  "tourist_routes": "Turistik marshrutlar"
+  "tourist_routes": "Turistik marshrutlar",
+  "contacts_and_form": "Aloqa ma'lumotlari va murojaat shakli",
+  "mfa_hotline": "O‘zbekiston Respublikasi Tashqi ishlar vazirligining ishonch telefoni:"
 }
