@@ -1,8 +1,4 @@
-"use client"
-
-
-
-
+"use client";
 
 import { INVESTMENTS_HTML } from "@/constants/investment";
 import { Breadcrumb } from "@/ui/breadcrumb";
@@ -10,42 +6,39 @@ import { useLocale, useTranslations } from "next-intl";
 
 export const InvestmentsMain = () => {
   const t = useTranslations();
-  const locale = useLocale()
-
+  const locale = useLocale();
 
   return (
     <>
       <section className="px-[20px] lg:px-[120px] mt-[24px] pb-[80px] lg:pb-[120px]">
-      <Breadcrumb
-  items={[
-    {
-      label: {
-        ru: "Главная",
-        uz: "Bosh sahifa",
-        en: "Home",
-      },
-      href: "/",
-    },
-    {
-      label: {
-        ru: "Экономическая дипломатия",
-        uz: "Iqtisodiy diplomatiya",
-        en: "Economic Diplomacy",
-      },
-      href: "/economy",
-
-    },
-    {
-      label: {
-        ru: "Инвестиционные проекты",
-        uz: "Investitsiya loyihalari",
-        en: "Investment Projects",
-      },
-      isCurrent: true,
-    },
-  ]}
-/>
-
+        <Breadcrumb
+          items={[
+            {
+              label: {
+                ru: "Главная",
+                uz: "Bosh sahifa",
+                en: "Home",
+              },
+              href: "/",
+            },
+            {
+              label: {
+                ru: "Экономическая дипломатия",
+                uz: "Iqtisodiy diplomatiya",
+                en: "Economic Diplomacy",
+              },
+              href: "/economy",
+            },
+            {
+              label: {
+                ru: "Инвестиционные проекты",
+                uz: "Investitsiya loyihalari",
+                en: "Investment Projects",
+              },
+              isCurrent: true,
+            },
+          ]}
+        />
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1
@@ -58,9 +51,9 @@ export const InvestmentsMain = () => {
         </div>
 
         <p
-            className="lg:text-[15px] "
-            dangerouslySetInnerHTML={{ __html: INVESTMENTS_HTML[locale] }}
-          />
+          className="lg:text-[15px] "
+          dangerouslySetInnerHTML={{ __html: INVESTMENTS_HTML[locale] }}
+        />
       </section>
     </>
   );
