@@ -90,5 +90,9 @@
   "required_documents": "Необходимые документы",
   "business_registration": "Регистрация бизнеса",
   "taxation_and_benefits": "Налогообложение и льготы:",
-  "trade_agreements": "Торговые соглашения"
+  "trade_agreements": "Торговые соглашения",
+  "tourism": "Туризм",
+  "heritage": "Наследие",
+  "landmarks": "Достопримечательности",
+  "tourist_routes": "Туристические маршруты"
 }

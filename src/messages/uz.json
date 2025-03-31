@@ -90,5 +90,9 @@
   "required_documents": "Zarur hujjatlar",
   "business_registration": "Biznesni roʻyxatdan oʻtkazish",
   "taxation_and_benefits": "Soliqqa tortish va imtiyozlar:",
-  "trade_agreements": "Savdo bitimlari"
+  "trade_agreements": "Savdo bitimlari",
+  "tourism": "Turizm",
+  "heritage": "Meros",
+  "landmarks": "Diqqatga sazovor joylar",
+  "tourist_routes": "Turistik marshrutlar"
 }

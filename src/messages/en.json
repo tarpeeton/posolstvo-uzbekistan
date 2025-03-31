@@ -90,5 +90,9 @@
   "required_documents": "Required documents",
   "business_registration": "Business Registration",
   "taxation_and_benefits": "Taxation and benefits",
-  "trade_agreements": "Trade Agreements"
+  "trade_agreements": "Trade Agreements",
+  "tourism": "Tourism",
+  "heritage": "Heritage",
+  "landmarks": "Landmarks",
+  "tourist_routes": "Tourist routes"
 }
