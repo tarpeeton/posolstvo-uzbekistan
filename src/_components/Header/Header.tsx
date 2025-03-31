@@ -11,6 +11,7 @@ import Image from "next/image";
 import { IoIosSearch } from "react-icons/io";
 import LanguageSwitcher from "../Switcher";
 import Navbar from "./Navigation";
+import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   const [date, setDate] = useState(new Date());
@@ -24,7 +25,6 @@ export function Header() {
     return () => clearInterval(timer);
   }, []);
 
-  // Only format and render date on the client
   const formattedDate = formatDate(date, locale);
 
   return (
@@ -65,6 +65,9 @@ export function Header() {
             {t("title")}
           </Link>
         </div>
+        <div className="block md:hidden">
+          <MobileMenu />
+        </div>
         <div className="hidden md:flex px-5 flex-row items-center gap-5">
           <div className="relative w-[300px]">
             <IoIosSearch
@@ -78,7 +81,7 @@ export function Header() {
                    focus:outline-none focus:border-blue-500 placeholder-gray-400"
             />
           </div>
-          <LanguageSwitcher currentLocale={locale} />
+          <LanguageSwitcher mobile={false} currentLocale={locale} />
         </div>
       </div>
       <div className="relative md:hidden w-full mt-2 px-[20px]">

@@ -17,8 +17,10 @@ const LANGUAGES: LanguageOption[] = [
 
 export default function LanguageSwitcher({
   currentLocale,
+  mobile,
 }: {
   currentLocale: string;
+  mobile: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const router = useRouter();
@@ -64,9 +66,11 @@ export default function LanguageSwitcher({
 
       {open && (
         <div
-          className="absolute right-0 mt-2 w-36 origin-top-right 
+          className={`absolute  ${
+            mobile ? "left-[20px]" : "right-0"
+          }  mt-2 w-36 origin-top-right 
                      rounded-md border border-gray-200 bg-white 
-                     shadow-md focus:outline-none"
+                     shadow-md focus:outline-none`}
         >
           {LANGUAGES.map((lang) => (
             <button

@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav
       aria-label="Main Navigation"
-      className="border-b w-full md:block border-gray-300 bg-[#BDC7CE4D] h-[43px] px-5 lg:px-[120px] relative"
+      className="border-b hidden w-full md:block border-gray-300 bg-[#BDC7CE4D] h-[43px] px-5 lg:px-[120px] relative"
     >
       <ul className="flex w-full h-full  md:space-x-2 px-4 pt-3 2xl:space-x-7">
         {NAV_ITEMS.map((item) => {
