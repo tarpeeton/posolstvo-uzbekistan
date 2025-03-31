@@ -87,7 +87,8 @@
   "economic_diplomacy": "Iqtisodiy diplomatiya",
   "uzbekistan_description": "O‘zbekiston o‘zining ko‘plab qadimiy tarixiy-me’moriy yodgorliklari, boy tabiati va jadal zamonaviy taraqqiyoti bilan butun dunyo e’tiborini tortmoqda. Asrlar davomida O‘zbekiston Buyuk Ipak yo‘lining savdo yo‘llari chorrahasida joylashgan bo‘lib, bu yo‘llardan savdogarlar va kashfiyotchilar, geograf va missionerlar, bosqinchilar va zabt etuvchilar o‘tgan. Bugungi kunda esa O‘zbekiston madaniyat, tarix, an’analar va ekzotik yurtlarga qiziqadigan tadbirkor insonlar uchun jozibali sayyohlik yo‘nalishiga aylangan.",
   "free_economic_zones": "Erkin iqtisodiy zonalar",
-   "required_documents": "Zarur hujjatlar",
-    "business_registration": "Biznesni roʻyxatdan oʻtkazish",
-    "taxation_and_benefits": "Soliqqa tortish va imtiyozlar:"
+  "required_documents": "Zarur hujjatlar",
+  "business_registration": "Biznesni roʻyxatdan oʻtkazish",
+  "taxation_and_benefits": "Soliqqa tortish va imtiyozlar:",
+  "trade_agreements": "Savdo bitimlari"
 }

@@ -87,8 +87,8 @@
   "economic_diplomacy": "Economic diplomacy",
   "uzbekistan_description": "Uzbekistan captures the attention of the world with its numerous ancient historical and architectural monuments, rich nature, and rapid modern development. For centuries, Uzbekistan was located at the crossroads of trade routes along the Great Silk Road, where merchants and explorers, geographers and missionaries, invaders and conquerors traveled. Today, Uzbekistan is an attractive tourist destination for enterprising individuals interested in culture, history, traditions, and exotic countries.",
   "free_economic_zones": "Free Economic Zones",
-   "required_documents": "Required documents",
-    "business_registration": "Business Registration",
-    "taxation_and_benefits": "Taxation and benefits"
-
+  "required_documents": "Required documents",
+  "business_registration": "Business Registration",
+  "taxation_and_benefits": "Taxation and benefits",
+  "trade_agreements": "Trade Agreements"
 }
