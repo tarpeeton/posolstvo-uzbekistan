@@ -18,6 +18,7 @@ export const FreeZonesMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -26,15 +27,16 @@ export const FreeZonesMain = () => {
                 ru: "Экономическая дипломатия",
                 uz: "Iqtisodiy diplomatiya",
                 en: "Economic Diplomacy",
+                ur: "اقتصادی سفارت کاری",
               },
               href: "/economy",
-
             },
             {
               label: {
                 ru: "Свободные экономические зоны",
                 uz: "Erkin iqtisodiy zonalar",
                 en: "Free Economic Zones",
+                ur: "آزاد اقتصادی زونز",
               },
               isCurrent: true,
             },
@@ -59,7 +61,6 @@ export const FreeZonesMain = () => {
             dangerouslySetInnerHTML={{ __html: FREE_ZONES[locale] }}
           />
         </div>
-
 
         <a
           href="/documents/mission-history.pdf"

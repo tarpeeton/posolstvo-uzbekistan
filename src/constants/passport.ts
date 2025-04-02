@@ -1,8 +1,5 @@
-
-
-
 export const PASSPORT_CONTENT = {
-    ru: `
+  ru: `
       <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">1. Оформление нового паспорта</h2>
       <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
         Выдается в случае истечения срока действия, утери, кражи или порчи паспорта.
@@ -39,8 +36,8 @@ export const PASSPORT_CONTENT = {
         <li>Требуется документальное подтверждение изменений (например, свидетельство о браке/разводе).</li>
       </ul>
     `,
-  
-    uz: `
+
+  uz: `
       <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">1. Yangi pasport rasmiylashtirish</h2>
       <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
         Pasport muddati tugagan, yo‘qolgan, o‘g‘irlangan yoki buzilgan hollarda beriladi.
@@ -77,8 +74,8 @@ export const PASSPORT_CONTENT = {
         <li>O‘zgartirishlarni tasdiqlovchi hujjatlar talab qilinadi (masalan, nikoh yoki ajrashganlik haqidagi guvohnoma).</li>
       </ul>
     `,
-  
-    en: `
+
+  en: `
       <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">1. Issuance of a New Passport</h2>
       <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
         Issued in case of expiration, loss, theft, or damage of the passport.
@@ -114,13 +111,50 @@ export const PASSPORT_CONTENT = {
       <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px;">
         <li>Documentary proof of changes is required (e.g., marriage/divorce certificate).</li>
       </ul>
-    `
-  }
+    `,
+  ur: `
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">1۔ نیا پاسپورٹ جاری کرنا</h2>
+    <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
+      اگر پاسپورٹ کی میعاد ختم ہو جائے، کھو جائے، چوری ہو جائے یا خراب ہو جائے تو نیا پاسپورٹ جاری کیا جاتا ہے۔
+    </p>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px;">
+      <li>مکمل شدہ درخواست فارم۔</li>
+      <li>پرانے پاسپورٹ کی نقل (اگر دستیاب ہو)۔</li>
+      <li>3.5 × 4.5 سینٹی میٹر کے دو رنگین تصاویر۔</li>
+      <li>قونصلر فیس کی ادائیگی کی رسید۔</li>
+      <li>چونکہ پاسپورٹ ازبکستان میں تیار کیا جاتا ہے، اس لیے اس عمل میں چند ہفتے لگ سکتے ہیں۔</li>
+    </ul>
 
-  export const PASSPORT_QUESTION = {
-    ru: {
-      description: "Как подать заявление?",
-      content: `
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">2۔ پاسپورٹ کی معیاد میں توسیع</h2>
+    <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
+      اگر مستقبل قریب میں پاسپورٹ کو تبدیل کرنا ممکن نہ ہو تو اس کی معیاد کو عارضی طور پر بڑھا دیا جاتا ہے۔ یہ محدود مدت (زیادہ سے زیادہ 2 سال) کے لیے جاری کیا جاتا ہے۔
+    </p>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">3۔ وطن واپسی کا سرٹیفکیٹ (RC) جاری کرنا</h2>
+    <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
+      یہ ان ازبک شہریوں کو جاری کیا جاتا ہے جن کا پاسپورٹ کھو گیا ہو اور جنہیں فوری طور پر وطن واپس جانے کی ضرورت ہو۔
+    </p>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px;">
+      <li>آر سی کے اجرا کے لیے درخواست۔</li>
+      <li>کھوئے ہوئے پاسپورٹ کی نقل (اگر دستیاب ہو)۔</li>
+      <li>کھو جانے/چوری ہونے کی پولیس رپورٹ (اگر موجود ہو)۔</li>
+      <li>اجرا کا عمل 1 سے 5 کام کے دن لگ سکتے ہیں۔</li>
+    </ul>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 30px">4۔ پاسپورٹ میں تبدیلیاں</h2>
+    <p style="font-size: 15px; margin-top: 12px; margin-bottom: 15px;">
+      تازہ شدہ معلومات (نام، کنیت، ازدواجی حیثیت وغیرہ) کا اندراج۔
+    </p>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px;">
+      <li>تبدیلیوں کا دستاویزی ثبوت درکار ہے (مثلاً نکاح/طلاق کا سرٹیفکیٹ)۔</li>
+    </ul>
+  `,
+};
+
+export const PASSPORT_QUESTION = {
+  ru: {
+    description: "Как подать заявление?",
+    content: `
         <ol style="font-size: 15px; list-style-type: num; padding-left: 20px;">
           <li>Записаться на прием в Посольство Узбекистана в Исламабаде.</li>
           <li>Собрать и подать необходимые документы.</li>
@@ -128,11 +162,11 @@ export const PASSPORT_CONTENT = {
           <li>Дождаться оформления документа.</li>
         </ol>
       `,
-      note: "Более подробную информацию можно получить на сайте Посольства Узбекистана в Пакистане или по телефону консульского отдела."
-    },
-    uz: {
-      description: "Ariza qanday topshiriladi?",
-      content: `
+    note: "Более подробную информацию можно получить на сайте Посольства Узбекистана в Пакистане или по телефону консульского отдела.",
+  },
+  uz: {
+    description: "Ariza qanday topshiriladi?",
+    content: `
         <ol style="font-size: 15px;  list-style-type: num; padding-left: 20px;">
           <li>Islomoboddagi O‘zbekiston elchixonasiga uchrashuvga yoziling.</li>
           <li>Zarur hujjatlarni yig‘ing va topshiring.</li>
@@ -140,11 +174,11 @@ export const PASSPORT_CONTENT = {
           <li>Hujjat tayyor bo‘lishini kuting.</li>
         </ol>
       `,
-      note: "Batafsil ma'lumotni Pokistondagi O‘zbekiston elchixonasi veb-saytida yoki konsullik bo‘limi telefon raqami orqali olish mumkin."
-    },
-    en: {
-      description: "How to apply?",
-      content: `
+    note: "Batafsil ma'lumotni Pokistondagi O‘zbekiston elchixonasi veb-saytida yoki konsullik bo‘limi telefon raqami orqali olish mumkin.",
+  },
+  en: {
+    description: "How to apply?",
+    content: `
         <ol style="font-size: 15px; list-style-type: num;  padding-left: 20px;">
           <li>Make an appointment at the Embassy of Uzbekistan in Islamabad.</li>
           <li>Collect and submit the required documents.</li>
@@ -152,7 +186,18 @@ export const PASSPORT_CONTENT = {
           <li>Wait for the document to be processed.</li>
         </ol>
       `,
-      note: "More detailed information can be found on the website of the Embassy of Uzbekistan in Pakistan or by calling the consular department."
-    }
-  }
-  
+    note: "More detailed information can be found on the website of the Embassy of Uzbekistan in Pakistan or by calling the consular department.",
+  },
+  ur: {
+    description: "درخواست کیسے جمع کروائیں؟",
+    content: `
+        <ol style="font-size: 15px; list-style-type: num; padding-left: 20px;">
+          <li>اسلام آباد میں ازبکستان کے سفارت خانے میں وقت طے کریں۔</li>
+          <li>ضروری دستاویزات اکٹھے کریں اور جمع کروائیں۔</li>
+          <li>قونصلر فیس ادا کریں۔</li>
+          <li>دستاویز کی تیاری کا انتظار کریں۔</li>
+        </ol>
+      `,
+    note: "مزید تفصیلی معلومات پاکستان میں ازبکستان کے سفارت خانے کی ویب سائٹ یا قونصلر سیکشن کے رابطہ نمبر کے ذریعے حاصل کی جا سکتی ہیں۔",
+  },
+};

@@ -6,14 +6,14 @@ import { MEDIA_BLOG } from "@/constants/media-blog";
 import { EmbassySwiper } from "../Main/Slider";
 import { WelComeUzbekistan } from "./WelcomeUzbekistan";
 import { ThemeContentItem } from "@/ui/ThemeContent";
-import { UZBEKISTAN_NAV , ABOUT_COUNTRY_HTML  } from "@/constants/about-uzbekistan";
-
-
-
+import {
+  UZBEKISTAN_NAV,
+  ABOUT_COUNTRY_HTML,
+} from "@/constants/about-uzbekistan";
 
 export const AboutUzbekistanMain = () => {
   const t = useTranslations();
-  const locale = useLocale()
+  const locale = useLocale();
 
   return (
     <section>
@@ -25,6 +25,7 @@ export const AboutUzbekistanMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -33,6 +34,7 @@ export const AboutUzbekistanMain = () => {
                 ru: "О Узбекистане",
                 uz: "O‘zbekiston haqida",
                 en: "About Uzbekistan",
+                ur: "ازبکستان کے بارے میں",
               },
               href: "/about-uzbekistan",
               isCurrent: true,
@@ -61,20 +63,16 @@ export const AboutUzbekistanMain = () => {
         </div>
       </div>
 
-     
       <div className="px-[20px] lg:mt-[120px] mt-[40px] lg:px-[120px]">
-      <p className="mb-[20px] text-[20px] lg:text-[24px]">
-      {t('topics')}
-      </p>
-            <div className="grid grid-cols-1 gap-[20px] lg:gap-[40px] lg:grid-cols-4  ">
-            {UZBEKISTAN_NAV.map((item) => (
-              <ThemeContentItem key={item.id} name={item.name} href={item.href}   />
-            ))}
-            </div>
-           
+        <p className="mb-[20px] text-[20px] lg:text-[24px]">{t("topics")}</p>
+        <div className="grid grid-cols-1 gap-[20px] lg:gap-[40px] lg:grid-cols-4  ">
+          {UZBEKISTAN_NAV.map((item) => (
+            <ThemeContentItem key={item.id} name={item.name} href={item.href} />
+          ))}
+        </div>
       </div>
-            <EmbassySwiper slides={MEDIA_BLOG} />
-            <WelComeUzbekistan />
+      <EmbassySwiper slides={MEDIA_BLOG} />
+      <WelComeUzbekistan />
     </section>
   );
 };

@@ -3,9 +3,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { ThemeContentItem } from "@/ui/ThemeContent";
 import { CONSULAR_CONTENT, CONSULAR_NAV } from "@/constants/consular";
 
-
-
-
 export const ConsularMain = () => {
   const t = useTranslations();
   const locale = useLocale();
@@ -20,6 +17,7 @@ export const ConsularMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -28,6 +26,7 @@ export const ConsularMain = () => {
                 ru: "Консульские услуги",
                 uz: "Konsullik xizmatlari",
                 en: "Consular Services",
+                ur: "قونصلر خدمات",
               },
               isCurrent: true,
             },
@@ -51,9 +50,9 @@ export const ConsularMain = () => {
         </div>
 
         <div className="mt-[24px] lg:mt-[100px] lg:grid-cols-4  grid grid-cols-1 gap-[20px] lg:gap-[40px]">
-            {CONSULAR_NAV.map((con) => (
-                <ThemeContentItem key={con.id} name={con.name} href={con.href} />
-            ))}
+          {CONSULAR_NAV.map((con) => (
+            <ThemeContentItem key={con.id} name={con.name} href={con.href} />
+          ))}
         </div>
       </section>
     </>

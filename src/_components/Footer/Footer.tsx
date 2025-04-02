@@ -11,6 +11,8 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { useState, ChangeEvent } from "react";
 import axios from "axios";
 
+import { FaTelegramPlane } from "react-icons/fa";
+
 type IFormType = {
   fullName: string;
   email: string;
@@ -72,6 +74,8 @@ export const Footer = () => {
                 ? "Контакты:"
                 : locale === "uz"
                 ? "Aloqa:"
+                : locale === "ur"
+                ? "رابطہ:"
                 : "Contacts:"}
             </p>
             <div className="flex flex-col gap-[10px]">
@@ -105,6 +109,8 @@ export const Footer = () => {
                   ? "Соцсети"
                   : locale === "uz"
                   ? "Ijtimoiy tarmoqlar"
+                  : locale === "ur"
+                  ? "سوشل میڈیا"
                   : "Social Media"}
               </p>
               <div className="flex flex-col gap-[10px] mt-[18px]">
@@ -128,6 +134,14 @@ export const Footer = () => {
                     Instagram
                   </p>
                 </div>
+                <div className="flex flex-row gap-[8px] items-center ">
+                  <div className="rounded-[5px] flex items-center justify-center w-[36px] h-[36px]  bg-[#25262F] ">
+                    <FaTelegramPlane className="text-white" />
+                  </div>
+                  <p className="text-white font-medium whitespace-pre-wrap">
+                    Telegram
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -148,7 +162,7 @@ export const Footer = () => {
         </div>
 
         {/* desktop */}
-        <div className="lg:ml-[30px]">
+        <div className="lg:ml-[30px] lg:w-[40%]">
           <div className="w-full ">
             <iframe
               title="Map of House №40, Street Khayaban-e-Iqbal, Islamabad, Pakistan"
@@ -162,8 +176,13 @@ export const Footer = () => {
             />
 
             <p className="text-white mt-2 text-[14px] underline ">
-              House №40, Street Khayaban-e-Iqbal, Sector F-8/3, Islamabad,
-              Pakistan
+              {locale === "ru"
+                ? "Дом №40, улица Хаябан-е-Икбал, сектор F-8/3, Исламабад, Пакистан"
+                : locale === "uz"
+                ? "Uy №40, Xayaban-e-Iqbal ko‘chasi, F-8/3 sektori, Islomobod, Pokiston"
+                : locale === "ur"
+                ? "گھر نمبر 40، خیابان اقبال، سیکٹر F-8/3، اسلام آباد، پاکستان"
+                : "House №40, Street Khayaban-e-Iqbal, Sector F-8/3, Islamabad, Pakistan"}
             </p>
           </div>
           <div className="flex flex-col mt-[25px] gap-5 md:mt-[40px]">
@@ -201,14 +220,32 @@ export const Footer = () => {
       </div>
       <div className="border-t py-2.5 lg:py-3.5 bg-[#0e0f18f3] px-[20px] border-t-white md:justify-between flex flex-col md:flex-row md:items-center gap-2.5">
         <p className="text-[13px] md:text-[14.2px] text-white">
-          Copyright © Ministry of Foreign Affairs. All Rights Reserved
+          {locale === "ru"
+            ? "Авторское право © Министерство иностранных дел. Все права защищены."
+            : locale === "uz"
+            ? "Mualliflik huquqi © Tashqi ishlar vazirligi. Barcha huquqlar himoyalangan."
+            : locale === "ur"
+            ? "جملہ حقوق © وزارت خارجہ محفوظ ہیں۔"
+            : "Copyright © Ministry of Foreign Affairs. All Rights Reserved."}
         </p>
         <div className="flex flex-row items-center gap-2.5">
           <p className="text-[13px] md:text-[14.2px] text-white">
-            Политика конфиденциальности
+            {locale === "ru"
+              ? "Политика конфиденциальности"
+              : locale === "uz"
+              ? "Maxfiylik siyosati"
+              : locale === "ur"
+              ? "رازداری کی پالیسی"
+              : "Privacy Policy"}
           </p>
           <p className="text-[13px] md:text-[14.2px] text-white">
-            Публичная оферта 2025
+            {locale === "ru"
+              ? "Публичная оферта 2025"
+              : locale === "uz"
+              ? "Ommaviy oferta 2025"
+              : locale === "ur"
+              ? "2025 کی عوامی پیشکش"
+              : "Public Offer 2025"}
           </p>
         </div>
       </div>

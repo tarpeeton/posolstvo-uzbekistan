@@ -48,13 +48,16 @@ export default function Navbar() {
                 {t(item.key)}
               </Link>
               {item.options && (
-                <div className="absolute w-screen shadow-2xl left-0  bg-white  opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity mt-2 z-50">
+                <div className="absolute w-screen shadow-2xl left-0 bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity mt-2 z-50">
                   <div className="flex flex-col pl-[120px] gap-[10px] p-4">
                     {item.options.map((option, idx) => (
                       <Link
                         key={idx}
-                        href={option.href}
-                        className="block hover:text-[#006FFF] transition-colors text-sm text-gray-800 "
+                        href={{
+                          pathname: "/news",
+                          query: { category: option.id },
+                        }}
+                        className="block hover:text-[#006FFF] transition-colors text-sm text-gray-800"
                       >
                         {option.title[locale as keyof typeof option.title]}
                       </Link>

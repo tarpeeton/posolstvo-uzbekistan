@@ -1,11 +1,12 @@
 export const HISTORY_MISSION = {
-    title: {
-      ru: "Хронология развития посольства",
-      uz: "Elchixonaning rivojlanish xronologiyasi",
-      en: "Chronology of the Embassy's Development"
-    },
-    description: {
-      ru: `Дипломатические отношения между Украиной и Республикой Узбекистан установлены 25 августа 1992 года. 28 октября 1991 года был подписан Договор об основах межгосударственных отношений, дружбе и сотрудничестве и Протокол о консультациях между министерствами иностранных дел двух стран.Дипломатическое представительство Украины в Республике Узбекистан было открыто в 1993г. Посольство Республики Узбекистан в Украине действует с 1995г.
+  title: {
+    ru: "Хронология развития посольства",
+    uz: "Elchixonaning rivojlanish xronologiyasi",
+    en: "Chronology of the Embassy's Development",
+    ur: "سفارت خانہ کی ترقی کا زمانی سلسلہ",
+  },
+  description: {
+    ru: `Дипломатические отношения между Украиной и Республикой Узбекистан установлены 25 августа 1992 года. 28 октября 1991 года был подписан Договор об основах межгосударственных отношений, дружбе и сотрудничестве и Протокол о консультациях между министерствами иностранных дел двух стран.Дипломатическое представительство Украины в Республике Узбекистан было открыто в 1993г. Посольство Республики Узбекистан в Украине действует с 1995г.
   Здание по адресу Владимирская 16 было сооружено в 1879-1881 годах в стиле эклектика по проекту архитектора В.Н.Николаева для чиновника Ф.М.Чарнецкого. Земельный участок площадью 1789 м2, на котором расположен объект, находится в Шевченковском районе горда Киев, с восточной стороны ограничен тротуаром на ул. Владимирской, с северной и западной - территорией НИПИ Градостроительства и детского учреждения, с южной стороны-с участком граничит прилегающая территория 5-ти этажного жилого дома.
   Г-образное 4-х этажное здание с подвалом площадью 2885,8м2 стоит на фундаменте из набивных железобетонных свай, установленных по безударной технологии. В кирпичных стенах на уровне железобетонных междуэтажных перекрытий устроены замкнутые монолитные железобетонные пояса, стены частично усилены железобетонными колоннами, внешние стены утеплены минераловатными плитами толщиной 75 мм.
   Ф.М.Чарнецкий сдавал дом в аренду, меблированные комнаты на 10 номеров, где жили горожане среднего достатка и останавливались приезжие. Среди них - русские художники М.А.Врубель (1888) и М.В.Нестеров (1890).
@@ -14,8 +15,8 @@ export const HISTORY_MISSION = {
   С 2003 года в здании размещено Посольство Республики Узбекистан в Украине.
   В 2013-2015 годах в здании узбекскими мастерами проведены ремонтно-восстановительные работы. Народными мастерами Узбекистана Махаматали Юнусовым и Мансуржон Муродовым, а также мастером из Хивинского района Хорезмской области Курбанбай Исмаиловым совместно с учениками в национальном стиле возведены во дворе и внутри здания деревянные резные беседки, колонны, резьбы по ганчу на стенах, карнизы, арки и двери. Заменены входные двери на резные двери со стороны улицы Владимирской. Для работы узбекские мастера использовали украинскую древесину - сосну и дуб.
   Также в 2013 году рядом со зданием Посольства был установлен телеэкран, на котором круглые сутки осуществляется показ видеороликов о туристическом потенциале Узбекистана.`,
-      
-      uz: `Ukraina va O‘zbekiston Respublikasi o‘rtasida diplomatik munosabatlar 1992-yil 25-avgustda o‘rnatilgan. 1991-yil 28-oktabrda ikki davlat Tashqi ishlar vazirliklari o‘rtasida maslahatlashuvlar protokoli va davlatlararo munosabatlar, do‘stlik va hamkorlik asoslari to‘g‘risidagi Shartnoma imzolangan. Ukrainada O‘zbekiston elchixonasi 1995-yildan buyon faoliyat yuritadi, Ukraina vakolatxonasi esa O‘zbekistonda 1993-yilda ochilgan.
+
+    uz: `Ukraina va O‘zbekiston Respublikasi o‘rtasida diplomatik munosabatlar 1992-yil 25-avgustda o‘rnatilgan. 1991-yil 28-oktabrda ikki davlat Tashqi ishlar vazirliklari o‘rtasida maslahatlashuvlar protokoli va davlatlararo munosabatlar, do‘stlik va hamkorlik asoslari to‘g‘risidagi Shartnoma imzolangan. Ukrainada O‘zbekiston elchixonasi 1995-yildan buyon faoliyat yuritadi, Ukraina vakolatxonasi esa O‘zbekistonda 1993-yilda ochilgan.
   Vladimirskaya ko‘chasi 16-uydagi bino 1879–1881 yillarda arxitektor V.N.Nikolaev loyihasi asosida eklektika uslubida F.M.Charnetskiy uchun qurilgan. Maydoni 1789 m² bo‘lgan uchastka Kiyevning Shevchenko tumanida joylashgan. Sharqdan — Vladimirskaya ko‘chasi, shimol va g‘arbdan — shaharsozlik instituti va bolalar muassasasi, janubdan esa besh qavatli uy hovlisi bilan chegaradosh.
   To‘rt qavatli, G-shaklidagi binoning maydoni 2885,8 m² bo‘lib, zarbasiz texnologiya asosida beton ustunlarga o‘rnatilgan. Devorlari mustahkamlangan, tashqi devorlar 75 mm qalinlikdagi mineral paxta plitalari bilan issiqlik izolyatsiyalangan.
   F.M.Charnetskiy ushbu binoni ijaraga bergan — o‘rta daromadli shaharliklar va sayohatchilar uchun 10 ta mebellangan xona mavjud bo‘lgan. Bu yerda mashhur rus rassomlari M.A.Vrubel (1888) va M.V.Nesterov (1890) ham yashagan.
@@ -25,8 +26,8 @@ export const HISTORY_MISSION = {
   2003-yildan buyon bu binoda O‘zbekiston Respublikasining Ukrainadagi elchixonasi joylashgan.
   2013–2015-yillarda binoda o‘zbek ustalari tomonidan ta’mirlash va restavratsiya ishlari olib borilgan. Xorazm viloyati, Xiva tumanidan bo‘lgan usta Qurbonboy Ismoilov, xalq ustalari Mahamatali Yunusov va Mansurjon Murodov hamda ularning shogirdlari tomonidan milliy uslubda yog‘ochdan o‘yma ayvonlar, ustunlar, ganch o‘ymakorligi, karnizlar, arkalar va eshiklar tayyorlangan. Kirish eshiklari Vladimirskaya ko‘chasi tomonidan o‘yilgan eshiklar bilan almashtirilgan. Ustalar ukrain yog‘ochi — qarag‘ay va eman — dan foydalangan.
   Shuningdek, 2013-yilda elchixona binosi yaqinida O‘zbekistonning turistik salohiyati haqida videoroliklar namoyishi uchun doimiy ishlovchi monitor o‘rnatilgan.`,
-      
-      en: `Diplomatic relations between Ukraine and the Republic of Uzbekistan were established on August 25, 1992. On October 28, 1991, the Treaty on the Fundamentals of Interstate Relations, Friendship, and Cooperation, along with the Protocol on Consultations between the Ministries of Foreign Affairs of both countries, was signed. Ukraine’s diplomatic mission in Uzbekistan opened in 1993, and the Embassy of the Republic of Uzbekistan in Ukraine has been operating since 1995.
+
+    en: `Diplomatic relations between Ukraine and the Republic of Uzbekistan were established on August 25, 1992. On October 28, 1991, the Treaty on the Fundamentals of Interstate Relations, Friendship, and Cooperation, along with the Protocol on Consultations between the Ministries of Foreign Affairs of both countries, was signed. Ukraine’s diplomatic mission in Uzbekistan opened in 1993, and the Embassy of the Republic of Uzbekistan in Ukraine has been operating since 1995.
   The building at 16 Volodymyrska Street was constructed between 1879–1881 in eclectic style by architect V.N. Nikolaev for civil servant F.M. Charnetsky. The land plot (1789 m²) is located in the Shevchenkivskyi district of Kyiv. It is bordered by Volodymyrska Street to the east, an urban planning institute and a childcare institution to the north and west, and a five-story residential building’s courtyard to the south.
   The L-shaped, four-story building with a basement has an area of 2885.8 m² and stands on reinforced concrete piles installed using a non-impact technology. The brick walls are reinforced with concrete belts at the slab levels, partially supported by columns, and externally insulated with 75 mm mineral wool panels.
   F.M. Charnetsky rented the house out as furnished rooms (10 units), used by middle-class residents and travelers. Among them were Russian artists M.A. Vrubel (1888) and M.V. Nesterov (1890).
@@ -35,7 +36,15 @@ export const HISTORY_MISSION = {
   During the Soviet period, the “Dniprospilka” Cooperative Museum operated here under the leadership of P.G. Tychyna in 1920.
   Since 2003, the building has housed the Embassy of the Republic of Uzbekistan in Ukraine.
   Between 2013 and 2015, Uzbek artisans carried out restoration work. Master craftsmen Mahamatali Yunusov and Mansurjon Murodov, along with Kurbanbay Ismailov from Khiva district (Khorezm region), and their students, created wooden carved gazebos, columns, ganch decorations, cornices, arches, and doors in the national style. The entrance doors facing Volodymyrska Street were replaced with carved wooden ones. Uzbek artisans used Ukrainian wood — pine and oak.
-  Also in 2013, a digital screen was installed near the Embassy building to display video content on Uzbekistan’s tourism potential 24/7.`
-    }
-  };
-  
+  Also in 2013, a digital screen was installed near the Embassy building to display video content on Uzbekistan’s tourism potential 24/7.`,
+  },
+  ur: `یوکرین اور جمہوریہ ازبکستان کے درمیان سفارتی تعلقات 25 اگست 1992 کو قائم کیے گئے۔ 28 اکتوبر 1991 کو دونوں ممالک کے خارجہ وزارتوں کے درمیان ریاستی تعلقات، دوستی اور تعاون کی بنیادوں پر معاہدہ اور مشاورت کے پروٹوکول پر دستخط کیے گئے۔ یوکرین کی سفارتی نمائندگی جمہوریہ ازبکستان میں 1993 میں کھولی گئی، اور جمہوریہ ازبکستان کا سفارت خانہ یوکرین میں 1995 سے فعال ہے۔
+    16 ولادیمیرسکا اسٹریٹ پر واقع عمارت 1879–1881 میں ماہر فن تعمیر وی.این. نکولائےو کے منصوبے پر، سرکاری ملازم ایف.ایم. چارنیٹسکی کے لیے، ایک الیکٹک طرز میں تعمیر کی گئی۔ اس عمارت کے لیے 1789 مربع میٹر رقبے والی زمین کیِف کے شیوچینکو ضلعی میں واقع ہے۔ مشرقی جانب یہ ولادیمیرسکا اسٹریٹ کے فٹ پاتھ سے محدود ہے، جبکہ شمالی اور مغربی جانب شہری منصوبہ بندی کے ادارے اور بچوں کے ادارے کی جگہ موجود ہے، اور جنوبی جانب پانچ منزلہ رہائشی عمارت کے صحن سے متصل ہے۔
+    جی-شکل کی چار منزلہ عمارت جس کے ساتھ تہ خانہ بھی ہے، 2885.8 مربع میٹر پر محیط ہے اور اسے بغیر ٹکرانے کی ٹیکنالوجی سے نصب شدہ رئیفورسیڈ کنکریٹ پیلوں پر تعمیر کیا گیا ہے۔ اینٹوں کی دیواروں میں فلور کے درمیان کنکریٹ بیلٹس نصب ہیں، جنہیں جزوی طور پر ستونوں سے مضبوط کیا گیا ہے، اور بیرونی دیواروں کو 75 ملی میٹر موٹی معدنی اون کی تختیوں سے موصلیت فراہم کی گئی ہے۔
+    ایف.ایم. چارنیٹسکی نے اس عمارت کے فرنیچر شدہ 10 کمروں کو کرائے پر دیا، جہاں متوسط طبقے کے شہری رہتے اور مسافر ٹھہرتے تھے۔ ان کمروں میں مشہور روسی فنکار ایم.اے. وروبیل (1888) اور ایم.وی. نیسٹروف (1890) بھی شامل تھے۔
+    1982 میں، کیِف کی پرانی فائر برگیڈ نے اس عمارت پر مریضوں اور بچوں کی مدد کے لیے ایک نئی بچاؤ گاڑی کا کامیابی سے تجربہ کیا۔
+    19ویں صدی کے آخر میں، عمارت کا ایک نیا مالک نمودار ہوا جس نے فرنیچر شدہ کمروں کو "لائنڈور" ہوٹل میں تبدیل کر دیا۔ یہ ہوٹل صدی کے آغاز تک موجود رہا، جس کے بعد عمارت کو ایک تعلیمی ادارے میں تبدیل کر دیا گیا۔ وقت کے ساتھ اس عمارت میں وی.آئی. پیٹرا کا لڑکوں کا گمنیزیا، والدین کے کونسل کا پہلا گمنیزیا، اور آخر کار وی.اے. ژیریبٹسووا کا گمنیزیا رہا، جسے 1 اگست 1911 سے کیِف کے بہترین اداروں میں سے ایک سمجھا جاتا تھا۔ سوویت دور میں 1920 میں پی.جی. ٹیچینا کی قیادت میں "ڈنیپروسلکا" کوآپریٹو میوزیم یہاں چلایا گیا۔
+    2003 سے، اس عمارت میں جمہوریہ ازبکستان کا سفارت خانہ یوکرین میں واقع ہے۔
+    2013 سے 2015 کے دوران، ازبک ماہرین نے اس عمارت میں مرمت اور بحالی کے کام انجام دیے۔ عوامی ماہرین مہامات علی یونسوف اور منصُرجن مروڈوف، نیز خویٰ ضلع (خورزم علاقہ) کے ماہر کوربان بائی اسماعیلوف اور ان کے شاگردوں نے قومی طرز پر صحن اور عمارت کے اندر لکڑی کے کندہ کیے ہوئے گیزبوز، ستون، دیواروں پر گانچ کی کندہ کاری، کارنیز، محراب اور دروازے تعمیر کیے۔ ولادیمیرسکا اسٹریٹ کی جانب سے داخلے کے دروازوں کو کندہ لکڑی کے دروازوں سے تبدیل کیا گیا۔ ازبک ماہرین نے کام کے لیے یوکرینی لکڑی — صنوبر اور بلوط استعمال کی۔
+    2013 میں، سفارت خانہ کی عمارت کے قریب ایک ڈیجیٹل اسکرین نصب کی گئی جس پر 24 گھنٹے ازبکستان کی سیاحتی صلاحیت کے بارے میں ویڈیو کلپس نشر کیے جاتے ہیں۔`,
+};

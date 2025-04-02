@@ -16,6 +16,7 @@ const THEME = [
       ru: "Заявка на участие в программе послов",
       uz: "Elchilar dasturida ishtirok etish uchun ariza",
       en: "Application for Ambassador Program",
+      ur: "سفیر پروگرام میں شرکت کی درخواست",
     },
   },
   {
@@ -24,6 +25,7 @@ const THEME = [
       ru: "Документы и требования",
       uz: "Hujjatlar va talablar",
       en: "Documents and Requirements",
+      ur: "دستاویزات اور تقاضے",
     },
   },
   {
@@ -32,9 +34,11 @@ const THEME = [
       ru: "Собеседование и этапы отбора",
       uz: "Suhbat va tanlov bosqichlari",
       en: "Interview and Selection Stages",
+      ur: "انٹرویو اور انتخاب کے مراحل",
     },
   },
 ];
+
 
 export const ContactAmbassadorMain = () => {
   const t = useTranslations();
@@ -44,6 +48,7 @@ export const ContactAmbassadorMain = () => {
     ru: "",
     uz: "",
     en: "",
+    ur: "",
     id: "",
   });
   const locale = useLocale();
@@ -89,6 +94,7 @@ export const ContactAmbassadorMain = () => {
               ru: "Главная",
               uz: "Bosh sahifa",
               en: "Home",
+              ur: "ہوم",
             },
             href: "/",
           },
@@ -97,6 +103,7 @@ export const ContactAmbassadorMain = () => {
               ru: "Посольство",
               uz: "Elchixona",
               en: "Embassy",
+              ur: "سفارت خانہ",
             },
             href: "/embassy",
           },
@@ -105,11 +112,13 @@ export const ContactAmbassadorMain = () => {
               ru: "Связь с послом",
               uz: "Elchi bilan aloqa",
               en: "Contact with the Ambassador",
+              ur: "سفیر سے رابطہ",
             },
             isCurrent: true,
           },
         ]}
       />
+
       <div className="flex flex-col lg:flex-row lg:py-[32px] lg:px-[40px] px-[20px] bg-[#DEDEE280] py-[15px] mt-[24px] lg:mt-[48px]">
         <div className="w-full ">
           <h1 className="text-[20px] lg:text-[32px] font-medium">

@@ -1,5 +1,5 @@
 export const LEGALIZATION_CONTENT_TA = {
-    ru: `
+  ru: `
       <h2 style="font-size: 20px; font-weight: 500;">Какие документы подлежат легализации?</h2>
       <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 12px; ">
         <li>Свидетельства о рождении, браке, разводе и смерти</li>
@@ -25,8 +25,8 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Коммерческие документы дополнительно заверяются Торгово-промышленной палатой Узбекистана.</li>
       </ul>
     `,
-  
-    uz: `
+
+  uz: `
       <h2 style="font-size: 20px; font-weight: 500;">Qanday hujjatlar legallashtiriladi?</h2>
       <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 12px;">
         <li>Tug‘ilganlik, nikoh, ajrim va o‘lim haqidagi guvohnomalar</li>
@@ -52,8 +52,8 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Commercial hujjatlar qo‘shimcha ravishda O‘zbekiston Savdo-sanoat palatasi tomonidan tasdiqlanadi.</li>
       </ul>
     `,
-  
-    en: `
+
+  en: `
       <h2 style="font-size: 20px; font-weight: 500; ">Which documents require legalization?</h2>
       <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 12px;">
         <li>Birth, marriage, divorce, and death certificates</li>
@@ -78,13 +78,37 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Legalized documents can only be used in Uzbekistan.</li>
         <li>Commercial documents must also be certified by the Chamber of Commerce and Industry of Uzbekistan.</li>
       </ul>
-    `
-  };
+    `,
+  ur: `
+    <h2 style="font-size: 20px; font-weight: 500;">کون سے دستاویزات کی توثیق ضروری ہے؟</h2>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 12px;">
+      <li>پیدائش، نکاح، طلاق اور وفات کے سرٹیفکیٹس</li>
+      <li>ڈپلومہ اور تعلیمی اسناد</li>
+      <li>نوٹری سے تصدیق شدہ وکالت نامے اور درخواستیں</li>
+      <li>عدالتی فیصلے</li>
+      <li>تجارتی دستاویزات (معاہدے، سرٹیفکیٹس وغیرہ)</li>
+    </ul>
 
-  
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 20px;">توثیق کا عمل</h2>
+    <ol style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 12px;">
+      <li>پہلے پاکستانی وزارت خارجہ سے تصدیق یا اپاسٹیل<br />دستاویز کو سب سے پہلے وزارت خارجہ پاکستان سے تصدیق کروایا جائے۔</li>
+      <li>سفارت خانے میں درخواست جمع کروانا<br />درخواست گزار، دستاویزات اسلام آباد میں ازبکستان کے سفارت خانے کے قونصلر سیکشن میں جمع کرواتا ہے۔</li>
+      <li>قونصلر فیس کی ادائیگی<br />فیس کی مقدار دستاویز کی قسم پر منحصر ہوتی ہے۔</li>
+      <li>جائزہ اور توثیق<br />یہ عمل 3 سے 10 کاروباری دن لے سکتا ہے۔</li>
+      <li>توثیق شدہ دستاویزات کا اجراء</li>
+    </ol>
 
-  export const LEGALIZATION_REQUIREMENTS_TA = {
-    ru: `
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 20px;">اہم ہدایات</h2>
+    <ul style="font-size: 15px; list-style-type: none; margin-top: 12px;">
+      <li>دستاویزات اصل یا نوٹری تصدیق شدہ نقول ہونی چاہئیں۔</li>
+      <li>توثیق شدہ دستاویزات صرف ازبکستان میں استعمال کے لیے موزوں ہیں۔</li>
+      <li>تجارتی دستاویزات کی مزید تصدیق ازبکستان چیمبر آف کامرس اینڈ انڈسٹری کے ذریعے کی جاتی ہے۔</li>
+    </ul>
+  `,
+};
+
+export const LEGALIZATION_REQUIREMENTS_TA = {
+  ru: `
       <h2 style="font-size: 20px; font-weight: 500;">Общие требования</h2>
       <ul style="font-size: 15px; list-style-type: none;  margin-top: 15px;">
         <li>Оригинал документа, подлежащего легализации</li>
@@ -123,8 +147,8 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Получить легализованный документ в назначенный срок (3–10 рабочих дней)</li>
       </ol>
     `,
-  
-    uz: `
+
+  uz: `
       <h2 style="font-size: 20px; font-weight: 500;">Umumiy talablar</h2>
       <ul style="font-size: 15px; list-style-type: none; ">
         <li>Legallashtirilishi kerak bo‘lgan hujjatning asl nusxasi</li>
@@ -163,8 +187,8 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Legallashtirilgan hujjatni belgilangan muddatda olish (3–10 ish kuni)</li>
       </ol>
     `,
-  
-    en: `
+
+  en: `
       <h2 style="font-size: 20px; font-weight: 500;">General Requirements</h2>
       <ul style="font-size: 15px; list-style-type: none; margin-top: 15px;">
         <li>Original document to be legalized</li>
@@ -202,6 +226,44 @@ export const LEGALIZATION_CONTENT_TA = {
         <li>Pay the consular fee</li>
         <li>Receive the legalized document within the specified period (3–10 business days)</li>
       </ol>
-    `
-  };
-  
+    `,
+  ur: `
+    <h2 style="font-size: 20px; font-weight: 500;">عمومی ضروریات</h2>
+    <ul style="font-size: 15px; list-style-type: none; margin-top: 15px;">
+      <li>وہ اصل دستاویز جس کی توثیق درکار ہے</li>
+      <li>دستاویز کی نقل (اگر ضروری ہو)</li>
+      <li>دستاویز کا ازبک یا روسی زبان میں مصدقہ (نوٹری شدہ) ترجمہ (اگر درکار ہو)</li>
+      <li>پاکستان کی وزارت خارجہ سے تصدیق (سفارت خانے میں جمع کروانے سے پہلے لازمی)</li>
+    </ul>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 15px">ذاتی دستاویزات کی توثیق (سرٹیفکیٹس، ڈپلومے، خطوط)</h2>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 15px;">
+      <li>پیدائش/نکاح/طلاق/وفات کا سرٹیفکیٹ</li>
+      <li>ڈپلومہ یا تعلیمی سند</li>
+      <li>طبی سرٹیفکیٹس</li>
+      <li>عدالتی فیصلے</li>
+    </ul>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 15px">تجارتی دستاویزات کی توثیق</h2>
+    <ul style="font-size: 15px; list-style-type: disc; padding-left: 20px; margin-top: 15px;">
+      <li>معاہدے، ایگریمنٹس</li>
+      <li>مصنوعات کے آغاز/اورجن کے سرٹیفکیٹس</li>
+      <li>مالیاتی دستاویزات</li>
+    </ul>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 15px">اضافی دستاویزات</h2>
+    <ul style="font-size: 15px; list-style-type: none; margin-top: 15px;">
+      <li>📌 درخواست گزار کے پاسپورٹ کی نقل</li>
+      <li>📌 توثیق کے لیے مکمل شدہ درخواست فارم</li>
+      <li>📌 قونصلر فیس کی ادائیگی کی رسید</li>
+    </ul>
+
+    <h2 style="font-size: 20px; font-weight: 500; margin-top: 15px">دستاویزات کیسے جمع کروائیں؟</h2>
+    <ol style="font-size: 15px; padding-left: 20px; list-style-type: num; margin-top: 15px;">
+      <li>دستاویز کو وزارت خارجہ پاکستان سے تصدیق کروائیں</li>
+      <li>اسلام آباد میں ازبکستان کے سفارت خانے میں درخواست جمع کریں</li>
+      <li>قونصلر فیس ادا کریں</li>
+      <li>مقررہ مدت (3 سے 10 ورکنگ دن) میں توثیق شدہ دستاویز وصول کریں</li>
+    </ol>
+  `,
+};

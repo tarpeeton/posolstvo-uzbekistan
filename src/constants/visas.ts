@@ -5,6 +5,7 @@ export const VISAS_DESCRIPTION = [
       ru: "Туристическая виза – оформление виз для краткосрочных поездок в Узбекистан.",
       uz: "Turistik viza – O‘zbekistonga qisqa muddatli sayohatlar uchun vizani rasmiylashtirish.",
       en: "Tourist visa – issuance of visas for short-term trips to Uzbekistan.",
+      ur: "سیاحتی ویزہ – ازبکستان کے مختصر مدتی سفر کے لیے ویزے کا اجرا۔",
     },
   },
   {
@@ -13,6 +14,7 @@ export const VISAS_DESCRIPTION = [
       ru: "Бизнес-виза – выдача виз для предпринимателей и деловых поездок.",
       uz: "Biznes viza – tadbirkorlar va ishbilarmonlik safarlari uchun vizalarni berish.",
       en: "Business visa – issuance of visas for entrepreneurs and business trips.",
+      ur: "بزنس ویزہ – تاجروں اور کاروباری دوروں کے لیے ویزوں کا اجرا۔",
     },
   },
   {
@@ -21,6 +23,7 @@ export const VISAS_DESCRIPTION = [
       ru: "Учебная виза – для студентов, поступивших в учебные заведения Узбекистана.",
       uz: "O‘quv vizasi – O‘zbekiston OTMlariga qabul qilingan talabalar uchun.",
       en: "Student visa – for students admitted to educational institutions in Uzbekistan.",
+      ur: "تعلیمی ویزہ – ازبکستان کے تعلیمی اداروں میں داخلہ لینے والے طلباء کے لیے۔",
     },
   },
   {
@@ -29,6 +32,7 @@ export const VISAS_DESCRIPTION = [
       ru: "Рабочая виза – для иностранцев, заключивших трудовые контракты с узбекскими компаниями.",
       uz: "Mehnat vizasi – O‘zbekiston kompaniyalari bilan mehnat shartnomasi tuzgan xorijliklar uchun.",
       en: "Work visa – for foreigners who have signed employment contracts with Uzbek companies.",
+      ur: "ورک ویزہ – ان غیر ملکیوں کے لیے جو ازبک کمپنیوں کے ساتھ ملازمت کے معاہدے کر چکے ہیں۔",
     },
   },
 ];
@@ -90,8 +94,7 @@ export const VISAS_CONTENT_HTML = {
 </p>
 `,
 
-
-uz: `
+  uz: `
 <h2 style="font-size: 20px; font-weight: 600;">Viza arizasini to‘ldirish:</h2>
 <ul style="font-size: 15px; list-style-type: disc;">
   <li>Vizani rasmiylashtirish uchun arizani ikki nusxada to‘ldirish va imzolash talab qilinadi. Ariza onlayn to‘ldiriladi:</li>
@@ -203,5 +206,61 @@ uz: `
   <a href="https://pakistan.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">Embassy of Uzbekistan in Pakistan</a> 
   for current information and application details.
 </p>
-`
+`,
+  ur: `
+<h2 style="font-size: 20px; font-weight: 600;">ویزا درخواست فارم بھرنا:</h2>
+<ul style="font-size: 15px; list-style-type: disc;">
+  <li>آپ کو ویزا فارم دو نقول میں بھرنا اور اس پر دستخط کرنا ہوگا۔ فارم آن لائن مکمل کیا جاتا ہے:</li>
+  <a href="https://eviza.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">eviza.mfa.uz</a>, 
+  <a href="https://pakistan.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">pakistan.mfa.uz</a>, 
+  <a href="https://gk-usbekistan.de" target="_blank" style="text-decoration: underline; color: black;">gk-usbekistan.de</a>.
+</ul>
+
+<h2 style="font-size: 20px; font-weight: 600; margin-top: 25px;">ضروری دستاویزات کی تیاری:</h2>
+<ul style="font-size: 15px; list-style-type: disc;">
+  <li>3.5 x 4.5 سینٹی میٹر کی دو رنگین تصاویر جو فارم کے ساتھ منسلک ہوں۔ 
+    <a href="https://gk-usbekistan.de" target="_blank" style="text-decoration: underline; color: black;">gk-usbekistan.de</a>
+  </li>
+  <li>ایک درست پاسپورٹ جس کی میعاد متوقع سفر کی تاریخ سے کم از کم تین ماہ مزید ہو۔ 
+    <a href="https://pac.ru" target="_blank" style="text-decoration: underline; color: black;">pac.ru</a>
+  </li>
+  <li>سفر کے مقصد کی تصدیق کرنے والی اضافی دستاویزات (مثال کے طور پر ورک ویزہ کے لیے آجر کا دعوت نامہ)۔</li>
+</ul>
+
+<h2 style="font-size: 20px; font-weight: 600; margin-top: 25px;">دستاویزات جمع کروانا:</h2>
+<ul style="font-size: 15px; list-style-type: disc;">
+  <li>مکمل شدہ فارم اور دستاویزات ازبکستان کے سفارت خانے (پاکستان) میں جمع کروائیں: 
+    <a href="https://pakistan.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">pakistan.mfa.uz</a>
+  </li>
+  <li>سفارت خانے کا پتہ: ہاؤس نمبر 40، خیابان اقبال، سیکٹر F-8/3، اسلام آباد۔
+    <a href="https://skyway.uz" target="_blank" style="text-decoration: underline; color: black;">SKYWAY</a> | 
+    <a href="#" style="text-decoration: underline; color: black;">ٹریول ایجنسی</a>
+  </li>
+  <li>رابطہ نمبر: +92-51-226-47-46۔</li>
+</ul>
+
+<h2 style="font-size: 20px; font-weight: 600; margin-top: 25px;">قونصلر فیس کی ادائیگی:</h2>
+<ul style="font-size: 15px; list-style-type: disc;">
+  <li>قونصلر فیس ویزہ کی قسم اور اس کی مدت پر منحصر ہے۔ مزید معلومات کے لیے سفارت خانے کی ویب سائٹ ملاحظہ کریں:</li>
+  <a href="https://pakistan.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">pakistan.mfa.uz</a>, 
+  <a href="https://gov.uz" target="_blank" style="text-decoration: underline; color: black;">ازبکستان حکومتی پورٹل</a>
+</ul>
+
+<h2 style="font-size: 20px; font-weight: 600; margin-top: 25px;">درخواست پر کارروائی کا وقت:</h2>
+<ul style="font-size: 15px; list-style-type: disc;">
+  <li>ویزا درخواست پر کارروائی کا وقت مختلف ہو سکتا ہے۔ ممکنہ تاخیر سے بچنے کے لیے پہلے سے درخواست جمع کروانے کا مشورہ دیا جاتا ہے۔</li>
+</ul>
+
+<h2 style="font-size: 20px; font-weight: 600; margin-top: 25px;">درخواست کے فارم:</h2>
+<p style="font-size: 15px;">
+  ویزا فارم 
+  <a href="https://eviza.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">eviza.mfa.uz</a>
+  پر آن لائن مکمل کیا جاتا ہے، جس کے بعد اسے پرنٹ کرکے دستخط کر لیا جاتا ہے۔ پی ڈی ایف یا DOCX میں ڈاؤن لوڈ کے فارم دستیاب نہیں ہیں — یہ تمام عمل آن لائن ہوتا ہے۔
+</p>
+<p style="font-size: 15px;">
+  مزید تازہ ترین معلومات اور درخواست جمع کروانے کی تفصیلات کے لیے 
+  <a href="https://pakistan.mfa.uz" target="_blank" style="text-decoration: underline; color: black;">ازبکستان کے سفارت خانے (پاکستان)</a>
+  سے رابطہ کرنے کی سفارش کی جاتی ہے۔
+</p>
+`,
 };

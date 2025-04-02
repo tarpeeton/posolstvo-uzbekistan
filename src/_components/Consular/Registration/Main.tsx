@@ -10,34 +10,38 @@ export const RegistrationMain = () => {
   return (
     <>
       <section className="px-[20px] lg:px-[120px] mt-[24px] pb-[80px] lg:pb-[120px]">
-        <Breadcrumb
-          items={[
-            {
-              label: {
-                ru: "Главная",
-                uz: "Bosh sahifa",
-                en: "Home",
-              },
-              href: "/",
-            },
-            {
-              label: {
-                ru: "Консульские услуги",
-                uz: "Konsullik xizmatlari",
-                en: "Consular Services",
-              },
-              href: "/consular",
-            },
-            {
-              label: {
-                ru: "Консульский учет",
-                uz: "",
-                en: "",
-              },
-              isCurrent: true,
-            },
-          ]}
-        />
+      <Breadcrumb
+  items={[
+    {
+      label: {
+        ru: "Главная",
+        uz: "Bosh sahifa",
+        en: "Home",
+        ur: "صفحہ اول"
+      },
+      href: "/",
+    },
+    {
+      label: {
+        ru: "Консульские услуги",
+        uz: "Konsullik xizmatlari",
+        en: "Consular Services",
+        ur: "قونصلر خدمات"
+      },
+      href: "/consular",
+    },
+    {
+      label: {
+        ru: "Консульский учет",
+        uz: "Konsullik ro‘yxatga olish",
+        en: "Consular Registration",
+        ur: "قونصلر رجسٹریشن"
+      },
+      isCurrent: true,
+    },
+  ]}
+/>
+
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1

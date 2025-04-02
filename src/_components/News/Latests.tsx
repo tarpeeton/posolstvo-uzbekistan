@@ -22,7 +22,7 @@ import { MonthPicker } from "./MonthPicker";
 import { BLOG_CATEGORY } from "@/constants/blog";
 import { formatSelectedDate } from "@/utils/formatSelectedDate";
 import { Pagination  , PaginationContent , PaginationNext , PaginationPrevious } from "@/ui/pagination";
-
+import { useRouter , useSearchParams } from "next/navigation";
 
 type DateRange = { from: Date; to?: Date };
 type DateOrRange = Date | DateRange | undefined;
@@ -32,14 +32,15 @@ export const LatestsNews = () => {
   const t = useTranslations();
   const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState<string>("day");
-
+  const searchParams = useSearchParams();
+  const categoryId = searchParams.get("category");
   const [tempDate, setTempDate] = useState<DateOrRange>(new Date());
   const [selectedDate, setSelectedDate] = useState<DateOrRange>(new Date());
   const [mode, setMode] = useState<Mode>("single");
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [categoryForFilter, setCategoryForFilter] = useState<string>("");
   const activateFilter = (key: string) => setActiveFilter(key);
-  const [tempCategory, setTempCategory] = useState<string>("");
+  const [tempCategory, setTempCategory] = useState<string>(categoryId);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 6;
   const totalPages = Math.ceil(BLOG_DATA.length / itemsPerPage);
@@ -125,7 +126,7 @@ export const LatestsNews = () => {
                       "bg-[#006FFF] text-white"
                     }`}
                   >
-                    <p>{category.name[locale]}</p>
+                    <p>{category.name[locale]} </p>
                   </button>
                 ))}
               </div>

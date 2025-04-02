@@ -9,4 +9,5 @@ export type TBlog = {
     date: string ,
     imageUrl: string
     viewsCount: number,
+    category_id: string,
 }

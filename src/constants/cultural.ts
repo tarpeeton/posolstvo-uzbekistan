@@ -1,7 +1,5 @@
-
-
 export const CULTURAL_CONTENT = {
-    ru: `
+  ru: `
   <p style="font-size: 16px;">
     Узбекистан и Пакистан имеют глубокие исторические, культурные и языковые связи, уходящие корнями в эпоху Средневековья. Династия Великих Моголов, правившая в Индии, происходила из Центральной Азии, и наследие Амир Темура (Тамерлана) играет важную роль в истории обеих стран. В современное время культурное сотрудничество развивается в нескольких ключевых направлениях.
   </p>
@@ -44,8 +42,8 @@ export const CULTURAL_CONTENT = {
     Культурные связи между Узбекистаном и Пакистаном продолжают активно развиваться, углубляя взаимопонимание и укрепляя традиционные исторические узы. Обе страны стремятся укреплять культурный обмен, продвигая совместные проекты в области искусства, науки и туризма.
   </p>
   `,
-  
-    uz: `
+
+  uz: `
   <p style="font-size: 16px;">
     Oʻzbekiston va Pokiston o‘rta asrlarga borib taqaluvchi chuqur tarixiy, madaniy va til jihatidan mushtarak ildizlarga ega. Hindistonda hukmronlik qilgan Boburiylar sulolasi Markaziy Osiyodan chiqqan bo‘lib, Amir Temur merosi ikki xalq tarixida muhim o‘rin tutadi. Bugungi kunda madaniy hamkorlik bir nechta yo‘nalishda faol rivojlanmoqda.
   </p>
@@ -88,8 +86,8 @@ export const CULTURAL_CONTENT = {
     O‘zbekiston va Pokiston o‘rtasidagi madaniy aloqalar izchil rivojlanib, o‘zaro anglashuvni mustahkamlash va tarixiy rishtalarni chuqurlashtirishga xizmat qilmoqda. Ikkala davlat san’at, fan va turizm sohalarida qo‘shma loyihalarni ilgari surish orqali madaniy almashinuvni kuchaytirishga intilmoqda.
   </p>
   `,
-  
-    en: `
+
+  en: `
   <p style="font-size: 16px;">
     Uzbekistan and Pakistan share deep historical, cultural, and linguistic ties dating back to the Middle Ages. The Mughal dynasty, which ruled India, originated from Central Asia, and the legacy of Amir Temur (Tamerlane) plays an important role in both nations' histories. Today, cultural cooperation is actively developing in several key directions.
   </p>
@@ -131,6 +129,48 @@ export const CULTURAL_CONTENT = {
   <p style="font-size: 16px;">
     Cultural ties between Uzbekistan and Pakistan continue to strengthen, deepening mutual understanding and reinforcing historical bonds. Both countries aim to enhance cultural exchange by promoting joint projects in arts, science, and tourism.
   </p>
-  `
-  };
+  `,
+  ur: `
+  <p style="font-size: 16px;">
+    ازبکستان اور پاکستان کے درمیان گہرے تاریخی، ثقافتی اور لسانی تعلقات موجود ہیں جو قرون وسطیٰ کی جڑوں تک پھیلے ہوئے ہیں۔ ہندوستان پر حکومت کرنے والی مغل سلطنت وسطی ایشیا سے وجود میں آئی اور امیر تیمور (تامرلان) کی وراثت دونوں ممالک کی تاریخ میں اہم کردار ادا کرتی ہے۔ آج کل ثقافتی تعاون کئی اہم شعبوں میں فروغ پا رہا ہے۔
+  </p>
   
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">تاریخی و ثقافتی ورثہ</h2>
+  <ul class="mt-[10px]" style="font-size: 16px;">
+    <li>ازبکستان اور پاکستان میں مشترکہ تاریخی شخصیات شامل ہیں، جیسے کہ بابُر – مغل سلطنت کے بانی، جن کی پیدائش اندیجان میں ہوئی تھی۔</li>
+    <li>پاکستان میں ازبک تاریخی شخصیات کے اعزاز میں یادگار نصب کیے جا رہے ہیں اور ان کی وراثت سے متعلق تقریبات منعقد کی جا رہی ہیں۔</li>
+  </ul>
+  
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">تعلیم اور سائنس</h2>
+  <ul class="mt-[10px]" style="font-size: 16px;">
+    <li>تاشقند ریاستی یونیورسٹی آف اورینٹل اسٹڈیز میں اردو زبان، ادب اور پاکستان کی تاریخ پڑھائی جاتی ہے۔</li>
+    <li>پاکستان کے ممتاز جامعات میں ازبک زبان اور وسطی ایشیا کی تاریخ کا مطالعہ کیا جاتا ہے۔</li>
+    <li>ازبکستان اور پاکستان باقاعدگی سے تاریخ، ثقافت اور معیشت کے موضوعات پر تعلیمی تبادلے اور سائنسی کانفرنسیں منعقد کرتے ہیں۔</li>
+  </ul>
+  
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">مشترکہ ثقافتی تقریبات</h2>
+  <ul class="mt-[10px]" style="font-size: 16px;">
+    <li>تاشقند اور اسلام آباد میں پاکستانی اور ازبک فلمی میلے باقاعدگی سے منعقد کیے جاتے ہیں۔</li>
+    <li>2023 میں لاہور میں منعقد ہونے والے ثقافتی تعاون فورم میں ازبک دستکاری، موسیقی اور قومی کھانوں کی نمائش کی گئی۔</li>
+    <li>ازبکستان پاکستان کی بین الاقوامی کتاب میلوں میں حصہ لیتا ہے جہاں کلاسیکی اور جدید ازبک ادب پیش کیا جاتا ہے۔</li>
+  </ul>
+  
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">سیاحت اور زیارت</h2>
+  <ul class="mt-[10px]" style="font-size: 16px;">
+    <li>پاکستانی زائرین ازبکستان کے تاریخی مقامات کا دورہ کرتے ہیں، جن میں بہاؤ الدین نقشبند (بخارا) اور امام البخاری (سمرقند) کے مقبرے شامل ہیں۔</li>
+    <li>ازبکستان میں پاکستانی مہمانوں کے لیے اسلامی سیاحت تیزی سے ترقی کر رہی ہے۔</li>
+    <li>مسافروں کی سہولت کے لیے تاشقند، لاہور اور کراچی کے درمیان نئی ہوائی پروازیں شروع کی جا رہی ہیں۔</li>
+  </ul>
+  
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">موسیقی اور فنون لطیفہ کا تعاون</h2>
+  <ul class="mt-[10px]" style="font-size: 16px;">
+    <li>ازبک اور پاکستانی فنکار قومی موسیقی کے میلے اور روایتی فنون لطیفہ کی نمائشوں میں حصہ لیتے ہیں۔</li>
+    <li>2024 میں تاریخی موضوعات پر مشترکہ فلمی منصوبوں کے قیام کے لیے مفاہمت نامہ پر دستخط کیے گئے۔</li>
+  </ul>
+  
+  <h2 style="font-size: 20px; font-weight: 600; margin-top: 20px;">اختتامیہ</h2>
+  <p style="font-size: 16px;">
+    ازبکستان اور پاکستان کے درمیان ثقافتی تعلقات فعال طور پر فروغ پا رہے ہیں، جو باہمی افہام و تفہیم کو گہرا کرتے ہیں اور روایتی تاریخی رشتوں کو مضبوط بناتے ہیں۔ دونوں ممالک فنون لطیفہ، سائنس اور سیاحت کے شعبوں میں مشترکہ منصوبوں کو فروغ دے کر ثقافتی تبادلے کو مزید تقویت دینے کی کوشش کر رہے ہیں۔
+  </p>
+  `,
+};

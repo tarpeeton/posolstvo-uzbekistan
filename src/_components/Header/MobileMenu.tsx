@@ -45,7 +45,10 @@ export const MobileMenu = () => {
                   {item.options.map((option) => (
                     <Link
                       key={option.key}
-                      href={option.href}
+                      href={{
+                        pathname: "/news",
+                        query: { category: option.id },
+                      }}
                       className={`text-sm px-2 py-1 hover:underline ${
                         pathname === option.href ? "font-semibold" : ""
                       }`}

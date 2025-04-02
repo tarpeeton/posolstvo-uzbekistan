@@ -8,7 +8,6 @@ import { TBlog } from "@/types/blog";
 import { useLocale } from "next-intl";
 import { Breadcrumb } from "@/ui/breadcrumb";
 
-
 export const Blog = () => {
   const { slug } = useParams();
   const [filteredBlog, setFilteredBlog] = useState<TBlog | null>(null);
@@ -22,13 +21,14 @@ export const Blog = () => {
   return (
     <section>
       <div className="mt-6">
-      <Breadcrumb
+        <Breadcrumb
           items={[
             {
               label: {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "ہوم",
               },
               href: "/",
             },
@@ -37,6 +37,7 @@ export const Blog = () => {
                 ru: "Новости",
                 uz: "Yangiliklar",
                 en: "News",
+                ur: "خبریں",
               },
               href: "/news",
             },
@@ -46,19 +47,19 @@ export const Blog = () => {
                     ru: filteredBlog.title.ru,
                     uz: filteredBlog.title.uz,
                     en: filteredBlog.title.en,
+                    ur: filteredBlog.title.ur,
                   }
                 : {
                     ru: "Загрузка...",
                     uz: "Yuklanmoqda...",
                     en: "Loading...",
+                    ur: "لوڈ ہو رہا ہے...",
                   },
               isCurrent: true,
             },
           ]}
         />
-
       </div>
-
 
       <div className="pt-[60px] pb-[100px] flex flex-col gap-[20px]">
         <div className="flex flex-col gap-4 lg:w-[60%] ">

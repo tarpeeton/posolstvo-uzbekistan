@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { DayPicker } from "react-day-picker"
-import {  ru  , enGB , uz} from "date-fns/locale";
+import {  ru  , enGB , uz } from "date-fns/locale";
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/ui/button"
 import { useLocale } from "next-intl";

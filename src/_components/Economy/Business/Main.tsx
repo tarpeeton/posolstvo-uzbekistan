@@ -18,6 +18,7 @@ export const BusinessMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -26,6 +27,7 @@ export const BusinessMain = () => {
                 ru: "Экономическая дипломатия",
                 uz: "Iqtisodiy diplomatiya",
                 en: "Economic Diplomacy",
+                ur: "اقتصادی سفارت کاری",
               },
               href: "/economy",
             },
@@ -34,6 +36,7 @@ export const BusinessMain = () => {
                 ru: "Регистрация бизнеса",
                 uz: "Biznesni roʻyxatdan oʻtkazish",
                 en: "Business Registration",
+                ur: "کاروبار کی رجسٹریشن",
               },
               isCurrent: true,
             },
@@ -79,11 +82,8 @@ export const BusinessMain = () => {
         </div>
 
         <div className="w-full flex flex-col gap-4 mt-[50px] lg:mt-[100px]">
-        <h1
-            aria-label="FAQ"
-            className="text-[24px] lg:text-[32px]"
-          >
-           FAQ
+          <h1 aria-label="FAQ" className="text-[24px] lg:text-[32px]">
+            FAQ
           </h1>
           <Faq data={FAQ_DATA} />
         </div>

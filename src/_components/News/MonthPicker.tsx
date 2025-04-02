@@ -22,7 +22,12 @@ export const MonthPicker = ({ onSelectMonth }: MonthPickerProps) => {
       "Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun",
       "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr",
     ],
+    ur: [
+      "جنوری", "فروری", "مارچ", "اپریل", "مئی", "جون",
+      "جولائی", "اگست", "ستمبر", "اکتوبر", "نومبر", "دسمبر",
+    ],
   };
+  
   const months = monthNames[locale] || monthNames["en"];
   return (
     <div className="p-4">

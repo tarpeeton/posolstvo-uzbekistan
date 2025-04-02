@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import { LEGALIZATION_CONTENT_TA , LEGALIZATION_REQUIREMENTS_TA } from "@/constants/legalization";
+import {
+  LEGALIZATION_CONTENT_TA,
+  LEGALIZATION_REQUIREMENTS_TA,
+} from "@/constants/legalization";
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 
 export const LegalizationMain = () => {
   const t = useTranslations();
   const locale = useLocale();
-
-
 
   return (
     <>
@@ -20,6 +21,7 @@ export const LegalizationMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -28,6 +30,7 @@ export const LegalizationMain = () => {
                 ru: "Консульские услуги",
                 uz: "Konsullik xizmatlari",
                 en: "Consular Services",
+                ur: "قونصلر خدمات",
               },
               href: "/consular",
             },
@@ -36,6 +39,7 @@ export const LegalizationMain = () => {
                 ru: "Легализация документов",
                 uz: "Hujjatlarni legallashtirish",
                 en: "Document Legalization",
+                ur: "دستاویزات کی توثیق",
               },
               isCurrent: true,
             },
@@ -43,36 +47,38 @@ export const LegalizationMain = () => {
         />
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
-        <h1
+          <h1
             aria-label={t("DOCUMENT_LEGALIZATION")}
             className="text-[24px] lg:text-[32px]"
           >
             {t("DOCUMENT_LEGALIZATION")}
           </h1>
-         
         </div>
-        
+
         <div className="mt-[20px] lg:mt-[30px]">
           <p
             className="lg:text-[15px] "
-            dangerouslySetInnerHTML={{ __html: LEGALIZATION_CONTENT_TA[locale] }}
+            dangerouslySetInnerHTML={{
+              __html: LEGALIZATION_CONTENT_TA[locale],
+            }}
           />
         </div>
 
         <h1
-            aria-label={t("DOCUMENT_LIST_REQUIRED")}
-            className="text-[24px] lg:text-[32px] mt-[40px]"
-          >
-            {t("DOCUMENT_LIST_REQUIRED")}
-          </h1>
-        
-          <div className="mt-[20px] lg:mt-[30px]">
+          aria-label={t("DOCUMENT_LIST_REQUIRED")}
+          className="text-[24px] lg:text-[32px] mt-[40px]"
+        >
+          {t("DOCUMENT_LIST_REQUIRED")}
+        </h1>
+
+        <div className="mt-[20px] lg:mt-[30px]">
           <p
             className="lg:text-[15px] "
-            dangerouslySetInnerHTML={{ __html: LEGALIZATION_REQUIREMENTS_TA[locale] }}
+            dangerouslySetInnerHTML={{
+              __html: LEGALIZATION_REQUIREMENTS_TA[locale],
+            }}
           />
         </div>
-       
       </section>
     </>
   );

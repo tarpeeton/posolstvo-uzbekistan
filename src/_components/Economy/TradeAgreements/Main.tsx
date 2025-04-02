@@ -18,6 +18,7 @@ export const TradeAgreementsMain = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -26,6 +27,7 @@ export const TradeAgreementsMain = () => {
                 ru: "Экономическая дипломатия",
                 uz: "Iqtisodiy diplomatiya",
                 en: "Economic Diplomacy",
+                ur: "اقتصادی سفارت کاری",
               },
               href: "/economy",
             },
@@ -34,6 +36,7 @@ export const TradeAgreementsMain = () => {
                 ru: "Торговые соглашения",
                 uz: "Savdo bitimlari",
                 en: "Trade Agreements",
+                ur: "تجارتی معاہدے",
               },
               isCurrent: true,
             },
@@ -47,7 +50,6 @@ export const TradeAgreementsMain = () => {
           >
             {t("trade_agreements")}
           </h1>
-        
         </div>
         <div className="mt-[30px] lg:mt-[40px] ">
           <p

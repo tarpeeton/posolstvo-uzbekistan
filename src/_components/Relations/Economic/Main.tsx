@@ -1,11 +1,8 @@
-
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 import { EmbassySwiper } from "@/_components/Main/Slider";
 import { MEDIA_BLOG } from "@/constants/media-blog";
 import { ECONOMICAL_CONTENT } from "@/constants/economic";
-
-
 
 export const RelationsEconomic = () => {
   const t = useTranslations();
@@ -21,6 +18,7 @@ export const RelationsEconomic = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "ہوم",
               },
               href: "/",
             },
@@ -29,6 +27,7 @@ export const RelationsEconomic = () => {
                 ru: "Дипломатические отношения",
                 uz: "Diplomatik munosabatlar",
                 en: "Diplomatic Relations",
+                ur: "سفارتی تعلقات",
               },
               href: "/relations",
             },
@@ -37,6 +36,7 @@ export const RelationsEconomic = () => {
                 ru: "Экономические связи",
                 uz: "Iqtisodiy aloqalar",
                 en: "Economic Relations",
+                ur: "اقتصادی تعلقات",
               },
               isCurrent: true,
             },
@@ -50,15 +50,14 @@ export const RelationsEconomic = () => {
           >
             {t("economic_relations_title")}
           </h1>
-           {/* CONTENT */}
-        <div>
-          <div
-            className="lg:text-[16px]"
-            dangerouslySetInnerHTML={{ __html: ECONOMICAL_CONTENT[locale] }}
-          />
+          {/* CONTENT */}
+          <div>
+            <div
+              className="lg:text-[16px]"
+              dangerouslySetInnerHTML={{ __html: ECONOMICAL_CONTENT[locale] }}
+            />
+          </div>
         </div>
-        </div>
-       
       </section>
       <EmbassySwiper slides={MEDIA_BLOG} />
     </>

@@ -16,33 +16,37 @@ export const LandMarkMain = () => {
       <section className=" mt-[24px] pb-[80px] lg:pb-[120px]">
         <div className="px-[20px] lg:px-[120px]">
         <Breadcrumb
-          items={[
-            {
-              label: {
-                ru: "Главная",
-                uz: "Bosh sahifa",
-                en: "Home",
-              },
-              href: "/",
-            },
-            {
-              label: {
-                ru: "Туризм",
-                uz: "Turizm",
-                en: "Tourism",
-              },
-              href: "/tourism",
-            },
-            {
-              label: {
-                ru: "Достопримечательности",
-                uz: "Diqqatga sazovor joylar",
-                en: "Landmarks",
-              },
-              isCurrent: true,
-            },
-          ]}
-        />
+  items={[
+    {
+      label: {
+        ru: "Главная",
+        uz: "Bosh sahifa",
+        en: "Home",
+        ur: "ہوم",
+      },
+      href: "/",
+    },
+    {
+      label: {
+        ru: "Туризм",
+        uz: "Turizm",
+        en: "Tourism",
+        ur: "سیاحت",
+      },
+      href: "/tourism",
+    },
+    {
+      label: {
+        ru: "Достопримечательности",
+        uz: "Diqqatga sazovor joylar",
+        en: "Landmarks",
+        ur: "سیاحتی مقامات",
+      },
+      isCurrent: true,
+    },
+  ]}
+/>
+
 
         <div className="mt-[24px] lg:mt-[45px] flex flex-col gap-[16px]">
           <h1

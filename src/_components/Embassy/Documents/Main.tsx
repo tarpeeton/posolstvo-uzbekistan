@@ -15,6 +15,7 @@ export const DocumentMain = () => {
               ru: "Главная",
               uz: "Bosh sahifa",
               en: "Home",
+              ur: "ہوم",
             },
             href: "/",
           },
@@ -23,6 +24,7 @@ export const DocumentMain = () => {
               ru: "Посольство",
               uz: "Elchixona",
               en: "Embassy",
+              ur: "سفارت خانہ",
             },
             href: "/embassy",
           },
@@ -31,11 +33,13 @@ export const DocumentMain = () => {
               ru: "Документы",
               uz: "Xujjatlar",
               en: "Documents",
+              ur: "دستاویزات",
             },
             isCurrent: true,
           },
         ]}
       />
+
       <div className="flex flex-col gap-[24px] mt-[24px] lg:mt-[48px]">
         <h1 className="text-[24px] lg:text-[32px]">{t("document_title")}</h1>
         <ul className="lg:pl-[20px]">

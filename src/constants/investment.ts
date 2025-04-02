@@ -1,7 +1,5 @@
-
-
 export const INVESTMENTS_HTML = {
-    ru: `
+  ru: `
       <h2 class="mt-[20px]">Ключевые преимущества инвестиционного климата Узбекистана</h2>
       <ul style="list-style: disc; padding-left: 20px;">
         <li>Стабильная экономика и рост ВВП: устойчивый рост 5–7% в год.</li>
@@ -43,8 +41,8 @@ export const INVESTMENTS_HTML = {
         <li>Узбекистан – ключевой инвестиционный центр Центральной Азии с выгодными условиями и поддержкой государства.</li>
       </ul>
     `,
-  
-    uz: `
+
+  uz: `
       <h2 class="mt-[20px]">Oʻzbekistondagi investitsiya muhiti asosiy afzalliklari</h2>
       <ul style="list-style: disc; padding-left: 20px;">
         <li>Barqaror iqtisodiyot va YaIMning 5–7% oʻsishi.</li>
@@ -86,8 +84,8 @@ export const INVESTMENTS_HTML = {
         <li>O‘zbekiston – Markaziy Osiyoning eng jozibali investitsiya markazlaridan biri bo‘lib, ishonchli iqtisodiyot, resurslarga kirish va davlat ko‘magini taklif etadi.</li>
       </ul>
     `,
-  
-    en: `
+
+  en: `
       <h2 class="mt-[20px]">Key Advantages of Uzbekistan's Investment Climate</h2>
       <ul style="list-style: disc; padding-left: 20px;">
         <li>Stable economy with GDP growth of 5–7% annually.</li>
@@ -128,6 +126,47 @@ export const INVESTMENTS_HTML = {
       <ul style="list-style: disc; padding-left: 20px;">
         <li>Uzbekistan offers attractive conditions with a strategic location, access to resources, and government support, becoming a major investment hub in Central Asia.</li>
       </ul>
-    `
-  };
-  
+    `,
+  ur: `
+    <h2 class="mt-[20px]">ازبکستان کے سرمایہ کاری ماحول کے اہم فوائد</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>مستحکم معیشت اور سالانہ 5 سے 7 فیصد جی ڈی پی نمو۔</li>
+      <li>وسیع قدرتی وسائل: سونا، گیس، یورینیم، کپاس۔</li>
+      <li>کرنسی کی آزادانہ پالیسی اور سرمایہ کاروں کے لیے ٹیکس مراعات۔</li>
+      <li>بڑے پیمانے پر منصوبوں کے لیے پبلک-پرائیویٹ پارٹنرشپ (PPP) پروگرام۔</li>
+      <li>وسطی ایشیا میں اسٹریٹجک محل وقوع اور جدید لاجسٹکس۔</li>
+      <li>22 آزاد اقتصادی زونز جن میں ٹیکس اور کسٹم میں چھوٹ دی جاتی ہے۔</li>
+      <li>تیزی سے ترقی کرتی صنعت اور زراعت۔</li>
+    </ul>
+
+    <h2 class="mt-[20px]">اہم سرمایہ کاری کے شعبے</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>توانائی – قابل تجدید ذرائع، ہائیڈرو اور سولر پاور پلانٹس۔</li>
+      <li>تیل اور گیس – نکالنے اور پراسیسنگ کی جدید کاری۔</li>
+      <li>زرعی کاروبار – پراسیسنگ، گرین ہاؤس کمپلیکس۔</li>
+      <li>انفراسٹرکچر اور ٹرانسپورٹ – سڑکیں، ہوائی اڈے، لاجسٹکس سینٹرز۔</li>
+      <li>سیاحت – ہوٹلز اور تاریخی مقامات کی بحالی۔</li>
+    </ul>
+
+    <h2 class="mt-[20px]">سرمایہ کاری کو راغب کرنے کے لیے حکومتی اقدامات</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>ازبکستان 2030 ترقیاتی حکمت عملی۔</li>
+      <li>سرمایہ کاری کے فروغ کے لیے ایجنسی کا قیام۔</li>
+      <li>غیر ملکی سرمایہ کاروں کے لیے ایک دن میں کاروبار کی رجسٹریشن۔</li>
+      <li>سرکاری بینکوں کے ذریعے ترجیحی قرضوں کی سہولت۔</li>
+    </ul>
+
+    <h2 class="mt-[20px]">ازبکستان میں غیر ملکی سرمایہ کار</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>چین – توانائی، انفراسٹرکچر، ٹرانسپورٹ۔</li>
+      <li>روس – تیل، گیس، دھات کاری، آئی ٹی۔</li>
+      <li>جنوبی کوریا – آٹوموبائل، ٹیکسٹائل۔</li>
+      <li>ترکی، یو اے ای، امریکہ، یورپی یونین – صنعت، لاجسٹکس، سیاحت۔</li>
+    </ul>
+
+    <h2 class="mt-[20px]">خلاصہ</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>ازبکستان وسطی ایشیا کا ایک اہم سرمایہ کاری مرکز بن رہا ہے، جہاں اسٹریٹجک محل وقوع، وسائل تک رسائی اور حکومتی تعاون دستیاب ہے۔</li>
+    </ul>
+  `,
+};

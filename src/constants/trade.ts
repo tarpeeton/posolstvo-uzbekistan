@@ -1,5 +1,5 @@
 export const TRADE_CONTENT = {
-    ru: `
+  ru: `
       <p>Узбекистан активно развивает международные торговые отношения, подписывая двусторонние и многосторонние соглашения с различными странами и организациями. Эти соглашения способствуют увеличению экспорта, привлечению инвестиций и упрощению торговых процедур как для местных, так и для иностранных компаний.</p>
   
       <h2 class="mt-[20px] text-[20px] font-medium">Обзор торговых соглашений</h2>
@@ -60,8 +60,8 @@ export const TRADE_CONTENT = {
   
       <p class="mt-[20px]">Узбекистан продолжает расширять торговые отношения, делая страну привлекательным деловым партнёром на международной арене.</p>
     `,
-  
-    uz: `
+
+  uz: `
       <p>O‘zbekiston xalqaro savdo aloqalarini faol rivojlantirmoqda. Turli davlatlar va tashkilotlar bilan ikki tomonlama hamda ko‘p tomonlama bitimlar imzolab, eksportni oshirish, investitsiyalarni jalb qilish va savdo jarayonlarini soddalashtirishga erishmoqda.</p>
   
       <h2 class="mt-[20px] text-[20px] font-medium">Savdo bitimlariga umumiy nazar</h2>
@@ -122,8 +122,8 @@ export const TRADE_CONTENT = {
   
       <p class="mt-[20px]">O‘zbekiston savdo aloqalarini kengaytirishda davom etmoqda va xalqaro maydonda ishonchli hamkor sifatida e’tirof etilmoqda.</p>
     `,
-  
-    en: `
+
+  en: `
       <p>Uzbekistan is actively developing international trade relations by signing bilateral and multilateral agreements with various countries and organizations. These agreements promote exports, attract investments, and simplify trade procedures for both local and foreign businesses.</p>
   
       <h2 class="mt-[20px] text-[20px] font-medium">Overview of Trade Agreements</h2>
@@ -183,6 +183,66 @@ export const TRADE_CONTENT = {
       </ul>
   
       <p class="mt-[20px]">Uzbekistan continues to expand trade ties, strengthening its position as a reliable business partner on the international stage.</p>
-    `
-  };
-  
+    `,
+  ur: `
+    <p>ازبکستان مختلف ممالک اور تنظیموں کے ساتھ دو طرفہ اور کثیر جہتی معاہدوں پر دستخط کر کے بین الاقوامی تجارتی تعلقات کو فعال طور پر فروغ دے رہا ہے۔ یہ معاہدے برآمدات کو فروغ دینے، سرمایہ کاری کو راغب کرنے اور مقامی و غیر ملکی کاروباروں کے لیے تجارتی طریقہ کار کو آسان بنانے میں مدد دیتے ہیں۔</p>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">تجارتی معاہدوں کا جائزہ</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>کسٹم ڈیوٹی میں کمی یا خاتمہ</li>
+      <li>کسٹمز کے طریقہ کار کو آسان بنانا</li>
+      <li>نئے منڈیوں تک رسائی</li>
+      <li>سرمایہ کاری کا تحفظ</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">دو طرفہ معاہدے</h2>
+    <p>ازبکستان نے کئی ممالک کے ساتھ دو طرفہ تجارتی معاہدے کیے ہیں، جن میں شامل ہیں:</p>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>چین – توانائی، زراعت اور ٹیکنالوجی کے شعبوں میں تعاون</li>
+      <li>روس – ترجیحی منڈی تک رسائی، سرمایہ کاری کے منصوبے</li>
+      <li>ترکی – صنعتی اور زرعی مصنوعات پر ٹیرف میں کمی</li>
+      <li>یورپی یونین – GSP+ درجہ، برآمدات کے عمل کو آسان بنانا</li>
+      <li>قازقستان، کرغزستان، تاجکستان – وسطی ایشیا کے اندر تجارت کی سہولت</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">کثیر جہتی معاہدے</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>ورلڈ ٹریڈ آرگنائزیشن (WTO) – شمولیت کا عمل جاری</li>
+      <li>شنگھائی تعاون تنظیم (SCO) – تجارت اور سرمایہ کاری کی ترقی</li>
+      <li>اقتصادی تعاون تنظیم (ECO) – علاقائی اقتصادی تعاون</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">سی آئی ایس کے تحت معاہدے</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>سی آئی ایس فری ٹریڈ زون – کسٹم ڈیوٹی کے بغیر تجارت</li>
+      <li>کسٹمز سے متعلق معاہدے – لاجسٹکس اور ٹرانزٹ میں آسانی</li>
+      <li>شریک ممالک: روس، قازقستان، بیلاروس، کرغزستان وغیرہ</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">ترجیحی اور آزاد تجارتی زونز</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>مخصوص مدت کے لیے ٹیکس اور کسٹم رعایتیں</li>
+      <li>انتظامی طریقہ کار میں آسانی</li>
+      <li>وسائل اور انفراسٹرکچر تک ترجیحی رسائی</li>
+      <li>اہم آزاد اقتصادی زونز: "نوائی"، "انگرین"، "جیزاخ"، "کوکند" وغیرہ</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">معاہدوں کے فوائد</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>برآمدات اور درآمدات پر کسٹم ڈیوٹی میں کمی یا خاتمہ</li>
+      <li>آزاد اقتصادی زونز میں ٹیکس کی مراعات</li>
+      <li>انتظامی رکاوٹوں میں کمی</li>
+      <li>مثالیں: یورپی یونین کو ٹیکسٹائل کی ڈیوٹی فری برآمد (GSP+)، روس کو پھلوں کی ڈیوٹی فری برآمدات</li>
+    </ul>
+
+    <h2 class="mt-[20px] text-[20px] font-medium">مراعات حاصل کرنے کا طریقہ کار</h2>
+    <ul style="list-style: num; padding-left: 20px;">
+      <li>معاہدوں کی شرائط اور متعلقہ مصنوعات کے لیے دستیاب مراعات کی جانچ کریں</li>
+      <li>دستاویزات کی تیاری (سرٹیفکیٹ آف اوریجن وغیرہ)</li>
+      <li>چیمبر آف کامرس سے توثیقی دستاویز حاصل کریں</li>
+      <li>کسٹم حکام کو دستاویزات جمع کروائیں</li>
+    </ul>
+
+    <p class="mt-[20px]">ازبکستان تجارتی تعلقات کو مسلسل وسعت دے رہا ہے اور بین الاقوامی سطح پر ایک قابل اعتماد کاروباری شراکت دار کے طور پر اپنی پوزیشن کو مضبوط کر رہا ہے۔</p>
+  `,
+};

@@ -22,6 +22,7 @@ export const StrategyTitle = () => {
                 ru: "Главная",
                 uz: "Bosh sahifa",
                 en: "Home",
+                ur: "صفحہ اول",
               },
               href: "/",
             },
@@ -30,6 +31,7 @@ export const StrategyTitle = () => {
                 ru: "О Узбекистане",
                 uz: "O‘zbekiston haqida",
                 en: "About Uzbekistan",
+                ur: "ازبکستان کے بارے میں",
               },
               href: "/about-uzbekistan",
             },
@@ -38,6 +40,7 @@ export const StrategyTitle = () => {
                 ru: "Стратегия 'Узбекистан-2030",
                 uz: "O'zbekiston-2030 strategiyasi",
                 en: "Uzbekistan-2030 Strategy",
+                ur: "ازبکستان-2030 حکمت عملی",
               },
               isCurrent: true,
             },
@@ -73,14 +76,20 @@ export const StrategyTitle = () => {
 
         <div className="flex flex-col gap-[20px] lg:gap-[28px]">
           <h2 className="text-[24px] lg:text-[32px]">
-          {t("priorityDirections")}
-
+            {t("priorityDirections")}
           </h2>
 
           {STRATEGY_DETAILS.map((item, index) => (
-            <div key={item.title[locale] + index + index} className="flex flex-col gap-2">
-              <p className="text-[18px] lg:text-[20px] font-medium">{item.title[locale]}</p>
-              <p className="text-[16px] whitespace-pre-wrap">{item.description[locale]}</p>
+            <div
+              key={item.title[locale] + index + index}
+              className="flex flex-col gap-2"
+            >
+              <p className="text-[18px] lg:text-[20px] font-medium">
+                {item.title[locale]}
+              </p>
+              <p className="text-[16px] whitespace-pre-wrap">
+                {item.description[locale]}
+              </p>
             </div>
           ))}
         </div>

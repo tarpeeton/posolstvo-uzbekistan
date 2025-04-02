@@ -3,6 +3,7 @@ import { useState } from "react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import clsx from "clsx";
+import { useLocale } from "next-intl";
 
 type LanguageOption = {
   label: string;
@@ -13,6 +14,7 @@ const LANGUAGES: LanguageOption[] = [
   { label: "Русский", value: "ru" },
   { label: "O‘zbekcha", value: "uz" },
   { label: "English", value: "en" },
+  { label: "اردو", value: "ur" },
 ];
 
 export default function LanguageSwitcher({
@@ -26,13 +28,23 @@ export default function LanguageSwitcher({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const locale = useLocale();
 
   const currentLabel =
-    LANGUAGES.find((lang) => lang.value === currentLocale)?.label || "Language";
+    LANGUAGES.find((lang) => lang.value === currentLocale)?.label ||
+    (locale === "ru"
+      ? "Язык"
+      : locale === "uz"
+      ? "Til"
+      : locale === "en"
+      ? "Language"
+      : locale === "ur"
+      ? "زبان"
+      : "");
 
   function getLocalePath(path: string, newLocale: string) {
     const segments = path.split("/").filter(Boolean);
-    if (["ru", "uz", "en"].includes(segments[0])) {
+    if (["ru", "uz", "en" , "ur"].includes(segments[0])) {
       segments.shift();
     }
     return "/" + [newLocale, ...segments].join("/");

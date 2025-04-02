@@ -1,5 +1,5 @@
 export const FREE_ZONES = {
-    ru: `
+  ru: `
       <h2 class="mt-[20px]">Свободные экономические зоны (СЭЗ) в Узбекистане</h2>
       <p>Свободные экономические зоны — это специальные территории с особыми налоговыми и таможенными льготами, созданные для привлечения иностранных и локальных инвестиций, развития промышленности, логистики, IT и сельского хозяйства.</p>
   
@@ -46,8 +46,8 @@ export const FREE_ZONES = {
         <li>Начать реализацию проекта с господдержкой</li>
       </ul>
     `,
-  
-    uz: `
+
+  uz: `
       <h2 class="mt-[20px]">O‘zbekistondagi erkin iqtisodiy zonalar (EIZ)</h2>
       <p>EIZ – bu xorijiy va mahalliy investitsiyalarni jalb qilish, sanoat, logistika, IT va qishloq xo‘jaligini rivojlantirish maqsadida yaratilgan maxsus soliq va bojxona imtiyozlariga ega hududlardir.</p>
   
@@ -94,8 +94,8 @@ export const FREE_ZONES = {
         <li>Loyihani davlat ko‘magida amalga oshirish</li>
       </ul>
     `,
-  
-    en: `
+
+  en: `
       <h2 class="mt-[20px]">Free Economic Zones (FEZs) in Uzbekistan</h2>
       <p>FEZs are special territories with tax and customs incentives created to attract foreign and local investment, and promote industry, logistics, IT, and agriculture.</p>
   
@@ -141,6 +141,52 @@ export const FREE_ZONES = {
         <li>Receive approval and sign the agreement</li>
         <li>Start project implementation with government support</li>
       </ul>
-    `
-  };
-  
+    `,
+  ur: `
+    <h2 class="mt-[20px]">ازبکستان میں آزاد اقتصادی زونز (FEZs)</h2>
+    <p>آزاد اقتصادی زونز وہ خصوصی علاقے ہیں جہاں ٹیکس اور کسٹم کی مراعات دی جاتی ہیں تاکہ غیر ملکی اور مقامی سرمایہ کاری کو راغب کیا جا سکے اور صنعت، لاجسٹکس، آئی ٹی اور زراعت کو فروغ دیا جا سکے۔</p>
+
+    <h2 class="mt-[20px]">1۔ سرمایہ کاروں کے لیے بنیادی فوائد</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>ٹیکس میں چھوٹ (وی اے ٹی، کسٹم ڈیوٹی، منافع اور جائیداد کے ٹیکس سے استثنیٰ)</li>
+      <li>کاروبار کی سادہ رجسٹریشن کا عمل (3 دن تک)</li>
+      <li>انفراسٹرکچر کی معاونت (زمین، یوٹیلٹیز)</li>
+      <li>کرنسی کی آزادانہ تبدیلی اور منافع کی منتقلی</li>
+      <li>قانون سازی کے استحکام پر حکومتی ضمانتیں</li>
+    </ul>
+
+    <h2 class="mt-[20px]">2۔ اہم آزاد اقتصادی زونز</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li><strong>صنعتی اور مینوفیکچرنگ زونز:</strong><br/>
+        "نوائی" – لاجسٹکس، الیکٹرانکس، فارماسیوٹیکلز، انرجی<br/>
+        "انگرین" – دھات کاری، تعمیراتی سامان، کیمیکلز<br/>
+        "جیزاخ" – آٹوموٹیو، الیکٹرانکس، ٹیکسٹائل<br/>
+        "خازاراسپ" – فرنیچر، تعمیراتی سامان، زرعی ٹیکنالوجی
+      </li>
+      <li><strong>ایگریکلچرل زونز:</strong><br/>
+        "کوکند" – پھلوں اور سبزیوں کی پروسیسنگ، پیکیجنگ، فوڈ انڈسٹری<br/>
+        "تاشقند-فارما پارک" – فارماسیوٹیکل کلسٹر، بائیوٹیکنالوجی
+      </li>
+      <li><strong>آئی ٹی اور انوویشن ٹیکنو پارکس:</strong><br/>
+        آئی ٹی پارک تاشقند – سٹارٹ اپ اور آئی ٹی کمپنیوں کے لیے موزوں ماحول<br/>
+        "یشنباد" ٹیکنوپارک – جدت اور الیکٹرانکس کی ترقی
+      </li>
+    </ul>
+
+    <h2 class="mt-[20px]">3۔ آزاد اقتصادی زون کے رہائشیوں کے لیے ٹیکس مراعات</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>منافع، جائیداد اور کسٹم ڈیوٹی سے استثنیٰ (3 سے 10 سال تک)</li>
+      <li>درآمد شدہ سازوسامان اور خام مال پر 0% وی اے ٹی</li>
+      <li>لائسنسنگ اور پرمٹ کے طریقہ کار کو آسان بنایا گیا ہے</li>
+    </ul>
+
+    <h2 class="mt-[20px]">4۔ آزاد اقتصادی زون کا رہائشی کیسے بنا جائے؟</h2>
+    <ul style="list-style: disc; padding-left: 20px;">
+      <li>سرمایہ کاری کے منصوبے کے لیے بزنس پلان تیار کریں</li>
+      <li>ازبکستان میں کمپنی کو رجسٹر کریں</li>
+      <li>متعلقہ ایف ای زیڈ ڈائریکٹوریٹ میں درخواست جمع کروائیں</li>
+      <li>منظوری حاصل کریں اور معاہدے پر دستخط کریں</li>
+      <li>حکومتی معاونت کے ساتھ منصوبے پر عمل درآمد شروع کریں</li>
+    </ul>
+  `,
+};
