@@ -12,6 +12,7 @@ import { IoIosSearch } from "react-icons/io";
 import LanguageSwitcher from "../Switcher";
 import Navbar from "./Navigation";
 import { MobileMenu } from "./MobileMenu";
+import { RiTelegramFill } from "react-icons/ri";
 
 export function Header() {
   const [date, setDate] = useState(new Date());
@@ -39,6 +40,9 @@ export function Header() {
         <div className="hidden md:flex md:flex-row md:items-center gap-5">
           <Link target="_blank" href="link">
             <FaFacebook className="lg:w-[20px] lg:h-[20px]" />
+          </Link>
+          <Link target="_blank" href="link">
+            <RiTelegramFill className="lg:w-[23.5px] lg:h-[23.5px]" />
           </Link>
           <Link target="_blank" href="link">
             <FaXTwitter className="lg:w-[20px] lg:h-[20px]" />
