@@ -1,20 +1,25 @@
-import { TBlog } from "@/types/blog";
-import { useLocale, useTranslations } from "next-intl";
+"use client"
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { sliceText } from "@/utils/sliceText";
 import { Link } from "@/i18n/routing";
+import { IPost } from "@/types/posts";
+import dayjs from 'dayjs'
 
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { GrView } from "react-icons/gr";
 
 type TBlogCardProps = {
-  blog: TBlog;
+  blog: IPost;
   read?: boolean;
 };
 
 export const BlogCard = ({ blog, read }: TBlogCardProps) => {
-  const locale = useLocale();
   const t = useTranslations();
+
+ const formattedDate = dayjs(blog?.created_at).format('YYYY.MM.DD');
+
+
 
   return (
     <Link
@@ -22,8 +27,8 @@ export const BlogCard = ({ blog, read }: TBlogCardProps) => {
       href={`/news/${blog.slug}`}
     >
       <Image
-        src={blog.imageUrl}
-        alt={blog.title[locale]}
+     src={blog?.img ? (blog.img.startsWith('http') ? blog.img : `/${blog.img}`) : 'image'}
+        alt={blog.title}
         quality={100}
         width={1000}
         height={1000}
@@ -31,10 +36,10 @@ export const BlogCard = ({ blog, read }: TBlogCardProps) => {
       />
       <div className="flex flex-col gap-3  py-5 px-6">
         <p className="text-[18px] font-medium text-[#0E0F18]">
-          {sliceText(blog.title[locale], 100)}
+         {blog?.title ? sliceText(blog.title, 100) : ""}
         </p>
         <p className="text-[15px] text-[#232328]">
-          {sliceText(blog.description[locale], 120)}
+      {blog?.description ? sliceText(blog.description, 120) : ""}
         </p>
       </div>
       <div
@@ -44,11 +49,11 @@ export const BlogCard = ({ blog, read }: TBlogCardProps) => {
       >
         <div className="flex text-[#3F425F] flex-row items-center gap-2">
           <FaRegCalendarAlt />
-          <p>{blog.date}</p>
+          <p>{formattedDate}</p>
         </div>
         <div className="flex text-[#3F425F] flex-row items-center gap-2">
           <GrView />
-          <p>{blog.viewsCount}</p>
+          <p>{blog?.views_count === null ? 0 : blog?.views_count}</p>
         </div>
       </div>
       {read && (

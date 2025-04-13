@@ -9,7 +9,7 @@ const nextConfig = {
         implementation: 'sass-embedded',
       },
     images: {
-        domains: ['ucarecdn.com',   'images.unsplash.com'],
+        domains: ['ucarecdn.com',   'images.unsplash.com' , 'via.placeholder.com' , "95.182.118.106"],
     },
 };
 

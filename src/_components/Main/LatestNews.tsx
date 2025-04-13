@@ -1,17 +1,36 @@
 "use client";
-import { BLOG_DATA } from "@/constants/blog";
-import { useTranslations } from "next-intl";
+import { useEffect  , useState} from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
-import { useState } from "react";
 import { BlogCard } from "@/ui/BlogCard";
+import { IPost } from "@/types/posts";
+import { Axios } from "@/utils/api";
+
 
 export const LatestNews = () => {
   const t = useTranslations();
   const [sliceNumber, setSliceNumber] = useState<number>(3);
+  const [posts , setPosts] = useState<IPost[] | []>([])
+  const locale = useLocale()
+
+
+
+useEffect(() => {
+  const getAllPosts = async () => {
+    const res = await Axios.get(`/post?lang=${locale}`)
+    const sortedPosts = [...res.data].sort((a, b) => {
+      return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    })
+    
+    setPosts(sortedPosts)
+  }
+
+  getAllPosts()
+}, [locale])
+
 
   const showMore = () => {
-    if (BLOG_DATA.length === sliceNumber) {
+    if (posts.length === sliceNumber) {
       return setSliceNumber(3);
     } else {
       return setSliceNumber((prev) => prev + 3);
@@ -24,8 +43,8 @@ export const LatestNews = () => {
         <p className="title-text">{t("latestNews")}</p>
         {/* CARDS */}
         <div className="grid grid-cols-1 gap-[20px] lg:grid-cols-3 lg:gap-[40px]">
-          {BLOG_DATA.slice(0, sliceNumber).map((blog, index) => (
-          <BlogCard  blog={blog}  key={blog.imageUrl + index} />
+          {posts.slice(0, sliceNumber).map((blog, index) => (
+          <BlogCard  blog={blog}  key={blog.img + index} />
           ))}
         </div>
 
@@ -33,17 +52,17 @@ export const LatestNews = () => {
 
         <button
           aria-label={
-            BLOG_DATA.length === sliceNumber ? t("showLess") : t("showMore")
+            posts.length === sliceNumber ? t("showLess") : t("showMore")
           }
           onClick={showMore}
           className="bg-[#427EFF] rounded-[4px] cursor-pointer h-12 flex flex-row items-center justify-center gap-2 hover:bg-[#4f42ff] w-full text-white"
         >
           <p>
-            {BLOG_DATA.length === sliceNumber ? t("showLess") : t("showMore")}
+            {posts.length === sliceNumber ? t("showLess") : t("showMore")}
           </p>
           <MdKeyboardArrowDown
             className={`md:text-[20px] ${
-              BLOG_DATA.length === sliceNumber ? "rotate-180" : ""
+              posts.length === sliceNumber ? "rotate-180" : ""
             }`}
           />
         </button>

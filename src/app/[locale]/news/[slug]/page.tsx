@@ -1,9 +1,11 @@
-import { CurrentBlog } from "@/_components/News/current/Main";
+import {CurrentBlog} from "@/_components/News/current/Main";
+
+
 
 export default function News() {
   return (
     <div>
-        <CurrentBlog />
+        <CurrentBlog  />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import * as React from "react"
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
-  MoreHorizontalIcon,
 } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -32,7 +31,7 @@ function PaginationContent({
   return (
     <ul
       data-slot="pagination-content"
-      className={cn("flex flex-row w-[32px] h-[32px] rounded-[4px] cursor-pointer items-center gap-1", active ? "active-class text-[#006FFF]" : "", className)}
+      className={cn("flex flex-row w-[32px] h-[32px] rounded-[4px] cursor-pointer items-center justify-center", active ? "active-class text-[#006FFF]" : "", className)}
       {...props}
     />
   )
