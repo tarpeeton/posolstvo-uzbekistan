@@ -46,6 +46,18 @@ body {
   overflow-x: hidden;
 }
 
+.custom-ul-style ul {
+  list-style: disc;
+  margin-top: 10px;
+  padding-left: 10px; 
+  margin-bottom: 1rem;
+}
+
+.custom-ul-style li {
+  margin-left: 0.5rem;
+}
+
+
 @layer components {
   .title-text {
     @apply text-[20px] md:text-[24px] font-medium text-[#000000];

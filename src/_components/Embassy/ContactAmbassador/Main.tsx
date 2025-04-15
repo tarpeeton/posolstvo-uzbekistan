@@ -8,6 +8,12 @@ import { Breadcrumb } from "@/ui/breadcrumb";
 import { HiOutlineDocument } from "react-icons/hi2";
 import { contactSchema } from "./schema";
 import { IoIosArrowDown } from "react-icons/io";
+import { Axios } from "@/utils/api";
+  import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 
 const THEME = [
   {
@@ -39,11 +45,13 @@ const THEME = [
   },
 ];
 
-
 export const ContactAmbassadorMain = () => {
   const t = useTranslations();
   const [openSubject, setOpenSubject] = useState(false);
   const subjectRef = useRef(null);
+  const [fileName, setFileName] = useState("");
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+
   const [selectedSubject, setSelectedSubject] = useState({
     ru: "",
     uz: "",
@@ -79,8 +87,29 @@ export const ContactAmbassadorMain = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+
+
+  const onSubmit = async (data) => {
+    const formData = new FormData();
+
+    formData.append("full_name", data.full_name);
+    formData.append("email", data.email);
+    formData.append("phone_number", data.phone);
+    formData.append("message", data.message);
+    formData.append("topic", selectedSubject[locale] || "");
+
+   if (selectedFile) {
+  formData.append("file", selectedFile);
+}
+
+
+    try {
+      await Axios.post("send-message", formData);
+      toast.success(t("toast.success"));
+    } catch (error) {
+      console.error("Sending failed:", error);
+      toast.error(t("toast.error"));
+    }
   };
 
   const handleOpenSubject = () => setOpenSubject(!openSubject);
@@ -121,6 +150,7 @@ export const ContactAmbassadorMain = () => {
 
       <div className="flex flex-col lg:flex-row lg:py-[32px] lg:px-[40px] px-[20px] bg-[#DEDEE280] py-[15px] mt-[24px] lg:mt-[48px]">
         <div className="w-full ">
+          <ToastContainer position="top-right" autoClose={4000} />
           <h1 className="text-[20px] lg:text-[32px] font-medium">
             {t("contact_with_ambassador")}
           </h1>
@@ -167,7 +197,6 @@ export const ContactAmbassadorMain = () => {
               {t(`errors.required.${errors.phone.message}`)}
             </p>
           )}
-
           <div ref={subjectRef} className="w-full flex flex-col gap-[10px]">
             <button
               type="button"
@@ -211,14 +240,29 @@ export const ContactAmbassadorMain = () => {
           )}
 
           <label className="cursor-pointer bg-white flex flex-row items-center justify-center gap-2 border rounded-[4px] border-dashed border-[#006FFF] px-4 py-6 text-center text-[#006FFF]">
-            {t("attach_file")}
+            {fileName || t("attach_file")}
             <HiOutlineDocument className="lg:w-[20px] lg:h-[20px]" />
-            <input type="file" className="hidden" />
+           <input
+  type="file"
+  className="hidden"
+  {...register("file")}
+  onChange={(e) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setFileName(file.name);
+      setSelectedFile(file); 
+    } else {
+      setFileName("");
+      setSelectedFile(null);
+    }
+  }}
+/>
+
           </label>
 
           <button
             type="submit"
-            className="bg-[#427EFF]  rounded-[4px] text-white px-4 py-3  hover:opacity-90 transition"
+            className="bg-[#427EFF]  cursor-pointer rounded-[4px] text-white px-4 py-3  hover:opacity-90 transition"
           >
             {t("send")}
           </button>

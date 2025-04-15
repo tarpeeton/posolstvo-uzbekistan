@@ -3,9 +3,11 @@ import { useState, useRef, useEffect } from "react";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations, useLocale } from "next-intl";
-import { HiOutlineDocument } from "react-icons/hi2";
+import { useTranslations } from "next-intl";
 import { contactSchema } from "./schema";
+import { Axios } from "@/utils/api";
+  import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactsMain = () => {
   const t = useTranslations();
@@ -38,12 +40,31 @@ export const ContactsMain = () => {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+
+
+
+
+   const onSubmit = async (data) => {
+     const formData = new FormData();
+ 
+     formData.append("full_name", data.full_name);
+     formData.append("email", data.email);
+     formData.append("phone_number", data.phone);
+     formData.append("message", data.message);
+ 
+     try {
+       await Axios.post("send-message", formData);
+       toast.success(t("toast.success"));
+     } catch (error) {
+       console.error("Sending failed:", error);
+       toast.error(t("toast.error"));
+     }
+   };
 
   return (
     <section className="px-[20px] lg:px-[120px] mt-[24px] pb-[80px] lg:pb-[120px]">
+                <ToastContainer position="top-right" autoClose={4200} />
+      
       <div className="flex flex-col lg:flex-row lg:py-[32px] lg:px-[40px] px-[20px] py-[15px] mt-[24px] lg:mt-[48px]">
         <div className="w-full ">
           <h1 className="text-[20px] lg:text-[32px] font-medium">
@@ -61,26 +82,16 @@ export const ContactsMain = () => {
           className="flex flex-col gap-4 mt-8 w-full lg:max-w-[600px]"
         >
           <input
-            {...register("firstName")}
-            placeholder={t("first_name")}
+            {...register("full_name")}
+            placeholder={t("full_name")}
             className="border border-[#BDC7CE] text-black placeholder:text-black bg-white px-4 py-3 rounded"
           />
-          {errors.firstName && (
+          {errors.full_name && (
             <p className="text-red-500 text-sm">
-              {t(`errors.required.${errors.firstName.message}`)}
+              {t(`errors.required.${errors.full_name.message}`)}
             </p>
           )}
 
-          <input
-            {...register("lastName")}
-            placeholder={t("last_name")}
-            className="border border-[#BDC7CE] text-black placeholder:text-black bg-white px-4 py-3 rounded"
-          />
-          {errors.lastName && (
-            <p className="text-red-500 text-sm">
-              {t(`errors.required.${errors.lastName.message}`)}
-            </p>
-          )}
 
           <input
             {...register("email")}

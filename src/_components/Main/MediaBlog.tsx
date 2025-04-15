@@ -11,6 +11,7 @@ interface IMediaBlogProps {
 export const MediaBlog = ({ links }: IMediaBlogProps) => {
   const t = useTranslations();
 
+console.log(links)
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

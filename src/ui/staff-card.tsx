@@ -5,8 +5,8 @@ import { Link } from "@/i18n/routing";
 
 type StaffCardItemProps = {
   image: string;
-  name: TMultiLang;
-  opp: TMultiLang;
+  name: string;
+  opp: string;
   email: string;
 };
 
@@ -17,7 +17,6 @@ export const StaffCardItem = ({
   image,
 }: StaffCardItemProps) => {
   const locale = useLocale();
-
   return (
     <article>
       <div className="h-[300px] max-h-[320px] ">
@@ -30,11 +29,13 @@ export const StaffCardItem = ({
         />
       </div>
       <div className="flex flex-col gap-[4px] mt-4">
-        <p className="text-[20px]">{name[locale]}</p>
-        <p className="text-[15px]">{opp[locale]}</p>
-        <Link href={`mailto:${email}`} className="text-[16px] text-[#006FFF]">
-          {email}
-        </Link>
+        <p className="text-[20px]">{name}</p>
+        <p className="text-[15px]">{opp}</p>
+        {email && email.trim() !== "" && (
+          <Link href={`mailto:${email}`} className="text-[16px] text-[#006FFF]">
+            {email}
+          </Link>
+        )}
       </div>
     </article>
   );

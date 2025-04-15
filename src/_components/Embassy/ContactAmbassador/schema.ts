@@ -9,6 +9,15 @@ export const contactSchema = z.object({
   fullName: z.string().min(1, { message: "fullName" }),
   email: z.string().email({ message: "email" }),
   phone: z.string().min(1, { message: "phone" }).regex(phoneRegex ,{ message: "phone" } ),
-  subject: z.string().min(1, { message: "subject" }),
   message: z.string().min(1, { message: "message" }),
+  file: z
+    .any()
+    .optional()
+    .refine(
+      (file) => !file || file instanceof FileList || file instanceof File,
+      {
+        message: "file",
+      }
+    ),
+
 });

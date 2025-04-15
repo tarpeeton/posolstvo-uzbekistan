@@ -44,9 +44,7 @@ const Faq: React.FC<FaqProps> = ({ data }) => {
                 isOpen ? " py-2" : "max-h-0"
               }`}
             >
-              <div className="text-[15px] text-gray-800 whitespace-pre-line">
-                {item.answer}
-              </div>
+              <div className="text-[15px] text-gray-800 " dangerouslySetInnerHTML={{ __html: item.answer }} />
             </div>
           </div>
         );

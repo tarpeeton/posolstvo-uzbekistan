@@ -1,12 +1,30 @@
+"use client"
+import { useState , useEffect } from "react";
 import { Link } from "@/i18n/routing";
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
-import { PREZIDENT_INFO } from "@/constants/prezident";
+import { Axios } from "@/utils/api";
+
+
+interface IPrezidentInfo {
+  title: string,
+  content: string,
+  button: string,
+  url: string
+}
 
 export const PrezidentInfo = () => {
   const t = useTranslations();
   const locale = useLocale();
+  const [prezident , setPrezident] = useState<IPrezidentInfo | null>(null)
+
+  useEffect(() => {
+    const fetchPrezidentInfo =  async () => {
+      const res = await Axios.get(`/page/1?lang=${locale}`)
+      setPrezident(res.data.data)
+    }
+    fetchPrezidentInfo()
+  } , [])
 
   return (
     <section className="px-[20px] lg:px-[120px] mt-6 lg:mt-7 pb-[80px] lg:pb-[150px]">
@@ -46,27 +64,18 @@ export const PrezidentInfo = () => {
         {t("president_and_government")}
       </h1>
       <div className="flex flex-col gap-[14px] lg:gap-[16px] mt-[24px] lg:mt-[40px]">
-        <h2 className="title-text" aria-label={t("president_of_uzbekistan")}>
-          {t("president_of_uzbekistan")}
-        </h2>
-        <Image
-          className="w-[300px] lg:h-[400px]"
-          width={1000}
-          quality={100}
-          height={600}
-          alt={t("president_of_uzbekistan")}
-          src="https://ucarecdn.com/1ad38338-be91-4c0e-b883-f52b3907b0ed/-/preview/426x640/"
-        />
-        <p className="whitespace-pre-wrap lg:text-[15px]">
-          {PREZIDENT_INFO[locale]}
-        </p>
+        <div>
+          <div  dangerouslySetInnerHTML={{ __html: prezident?.content}}/>
+        </div>
+       
+        
         <Link
           className="bg-[#427EFF] h-[45px] w-full flex items-center justify-center text-center rounded-[4px] text-white lg:min-w-[220px] lg:max-w-[300px] lg:h-[45px]"
-          href=""
+          href={`${prezident?.url}`}
           target="_blank"
           aria-label={t("go_to_president_website")}
         >
-          {t("go_to_president_website")}
+         {prezident?.button}
         </Link>
       </div>
     </section>

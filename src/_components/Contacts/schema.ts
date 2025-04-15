@@ -5,8 +5,7 @@ const phoneRegex = new RegExp(
 );
 
 export const contactSchema = z.object({
-  firstName: z.string().min(1, { message: "firstName" }),
-  lastName: z.string().min(1, { message: "lastName" }),
+  full_name: z.string().min(1, { message: "full_name" }),
   email: z.string().email({ message: "email" }),
   phone: z.string().min(1, { message: "phone" }).regex(phoneRegex, { message: "phone" }),
   message: z.string().min(1, { message: "message" }),

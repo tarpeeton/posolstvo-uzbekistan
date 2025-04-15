@@ -10,6 +10,10 @@
     "tourism": "Turizm",
     "contactsForm": "Kontaktlar va murojaat shakli"
   },
+  "toast": {
+    "success": "Xabaringiz muvaffaqiyatli yuborildi!",
+    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring."
+  },
   "title": "Oʻzbekiston Respublikasining Pokiston \n Islom Respublikasidagi Elchixonasi",
   "search": "Qidirish",
   "topics": "Dolzarb mavzular",

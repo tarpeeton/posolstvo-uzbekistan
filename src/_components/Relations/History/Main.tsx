@@ -1,12 +1,30 @@
+"use client";
+import { useEffect, useState } from "react";
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
-import { CONTENT_RELATION_HTML, RELATION_HISTORY } from "@/constants/relations";
+import { RELATION_HISTORY } from "@/constants/relations";
 import { EmbassySwiper } from "@/_components/Main/Slider";
 import { MEDIA_BLOG } from "@/constants/media-blog";
+import { Axios } from "@/utils/api";
+
+interface IMilestone {
+  title: string;
+  content: string;
+}
 
 export const RelationsHistoryMain = () => {
   const t = useTranslations();
   const locale = useLocale();
+  const [Content, setContent] = useState<IMilestone | null>(null);
+
+  useEffect(() => {
+    const getAllStaffs = async () => {
+      const res = await Axios.get(`/milestone?lang=${locale}`);
+      setContent(res.data.data[0]);
+    };
+
+    getAllStaffs();
+  }, [locale]);
 
   return (
     <>
@@ -56,9 +74,12 @@ export const RelationsHistoryMain = () => {
         </div>
         {/* CONTENT */}
         <div className="mt-[70px] lg:mt-[36px]">
+          <p className="text-black font-bold lg:text-[20px]  text-[17px]">
+            {Content?.title}
+          </p>
           <span
-            className="lg:text-[16px] "
-            dangerouslySetInnerHTML={{ __html: CONTENT_RELATION_HTML[locale] }}
+            className="lg:text-[16px] custom-ul-style"
+            dangerouslySetInnerHTML={{ __html: Content?.content }}
           />
         </div>
       </section>

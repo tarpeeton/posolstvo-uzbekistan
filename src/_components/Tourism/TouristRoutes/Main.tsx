@@ -1,12 +1,29 @@
+'use client'
+import { useState , useEffect } from "react";
+import { Axios } from "@/utils/api";
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
-import { LANDMARK_DESCRIPTION, SLIDER_TOURISM } from "@/constants/tourism";
+import { LANDMARK_DESCRIPTION } from "@/constants/tourism";
+
+
 
 import Image from "next/image";
+import { ITourismMixs } from "@/types/tourism";
+import { Link } from "@/i18n/routing";
 
 export const TouristRoutesMain = () => {
   const t = useTranslations();
   const locale = useLocale();
+  const [Routes , setRoutes] = useState<ITourismMixs[]>([])
+
+useEffect(() => {
+    const FetchAllTypeOne = async () => {
+      const res = await Axios.get(`place?type=2&lang=${locale}`);
+      setRoutes(res.data.data);
+    };
+    FetchAllTypeOne();
+  }, [locale]);
+
 
   return (
     <>
@@ -55,24 +72,25 @@ export const TouristRoutesMain = () => {
           </div>
 
           <div className="grid grid-cols-1 mt-[30px] lg:mt-[80px] md:grid-cols-2 lg:gap-[40px] gap-[20px]">
-            {SLIDER_TOURISM.map((item, index) => (
-              <div
-                key={index + item.url}
+            {Routes.map((item, index) => (
+              <Link
+               href={`tourist-routers/${item.slug}`}
+                key={index + item.image}
                 className="h-[250px] lg:h-[300px] group overflow-hidden rounded-[5px] relative"
               >
                 <Image
                   quality={100}
-                  src={item.url}
-                  alt={item.text[locale] + "image"}
+                  src={item.image}
+                  alt={item.title + "image"}
                   width={1000}
                   height={600}
                   className="w-full h-full group-hover:scale-110 transition-transform object-cover rounded-[5px]"
                 />
                 <div className="absolute w-full h-full bg-black/30" />
                 <p className="absolute text-white text-[18px] lg:text-[20px] z-50 bottom-[20px] lg:bottom-6 left-4">
-                  {item.text[locale]}
+                  {item.title}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

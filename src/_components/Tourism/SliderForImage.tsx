@@ -6,22 +6,22 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import { TMultiLang } from "@/types/multiLang";
 import { useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 interface SlideData {
-  url: string;
-  alt?: string;
-  text: TMultiLang
+  title: string;
+  image: string;
+  slug: string;
 }
 
 interface EmbassySwiperProps {
   slides: SlideData[];
+  typeROUTER: number
 }
 
-export const TourismSlider: FC<EmbassySwiperProps> = ({ slides }) => {
+export const TourismSlider: FC<EmbassySwiperProps> = ({ slides , typeROUTER }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const locale = useLocale()
 
   return (
     <section className="w-full h-[400px] md:h-[500px] ">
@@ -52,7 +52,8 @@ export const TourismSlider: FC<EmbassySwiperProps> = ({ slides }) => {
               key={index}
               className="flex flex-col relative items-center justify-center"
             >
-              <div
+              <Link
+              href={typeROUTER  === 1 ? `tourism/landmarks/${slide.slug}` : `tourist-routers/${slide.slug}`}
                 className={`
                   flex items-center  relative rounded-[5px] justify-center w-full 
                   transition-all duration-300
@@ -60,8 +61,8 @@ export const TourismSlider: FC<EmbassySwiperProps> = ({ slides }) => {
                 `}
               >
                 <Image
-                  src={slide.url}
-                  alt={slide.alt || "image"}
+                  src={slide.image}
+                  alt={slide.title || "image"}
                   width={1000}
                   height={1000}
                   quality={100}
@@ -69,9 +70,9 @@ export const TourismSlider: FC<EmbassySwiperProps> = ({ slides }) => {
                 />
                 <div className="absolute w-full h-full bg-black  opacity-15" />
                 <p className="text-[18px] z-50 lg:text-[21px] absolute bottom-[20px] left-[10px] text-white">
-                  {slide.text[locale]}
+                  {slide.title}
                 </p>
-              </div>
+              </Link>
             </SwiperSlide>
           );
         })}

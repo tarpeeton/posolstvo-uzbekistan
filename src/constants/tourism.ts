@@ -21,78 +21,7 @@ export const HERITAGE = {
   ur: `ازبکستان اپنے قدیم تاریخی و معمارانہ یادگاروں پر فخر کرتا ہے جو ہمارے آبا و اجداد کے زمانے سے ہمیں وراثت میں ملے ہیں۔ خوی میں موجود ایچان-قلعہ کمپلیکس اور بخارا، شہرسابز اور سمرقند کے تاریخی مراکز کو یونیسکو کی خصوصی فہرست "عالمی ورثہ" میں شامل کیا گیا ہے۔ ان شہروں کی منفرد یادگاریں اور معمارانہ عمارات اس دور کی عکاسی کرتی ہیں جس نے ملک کی تاریخ میں نمایاں کردار ادا کیا۔`,
 };
 
-export const SLIDER_TOURISM = [
-  {
-    url: "https://ucarecdn.com/e37a4cfd-bceb-49a4-ba1a-d62be9856ce7/-/preview/339x240/",
-    alt: "image-Ташкентский Дом Фотографии",
-    text: {
-      ru: "Ташкентский Дом Фотографии",
-      uz: "Toshkent Fotosuratlar Uyi",
-      en: "Tashkent House of Photography",
-      ur: "تاشقند فوٹوگرافی کا گھر",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/e37a4cfd-bceb-49a4-ba1a-d62be9856ce7/-/preview/339x240/",
-    alt: "image-Ташкентский Дом Фотографии",
-    text: {
-      ru: "Ташкентский Дом Фотографии",
-      uz: "Toshkent Fotosuratlar Uyi",
-      en: "Tashkent House of Photography",
-      ur: "تاشقند فوٹوگرافی کا گھر",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/e37a4cfd-bceb-49a4-ba1a-d62be9856ce7/-/preview/339x240/",
-    alt: "image-Ташкентский Дом Фотографии",
-    text: {
-      ru: "Ташкентский Дом Фотографии",
-      uz: "Toshkent Fotosuratlar Uyi",
-      en: "Tashkent House of Photography",
-      ur: "تاشقند فوٹوگرافی کا گھر",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/e37a4cfd-bceb-49a4-ba1a-d62be9856ce7/-/preview/339x240/",
-    alt: "image-Ташкентский Дом Фотографии",
-    text: {
-      ru: "Ташкентский Дом Фотографии",
-      uz: "Toshkent Fotosuratlar Uyi",
-      en: "Tashkent House of Photography",
-      ur: "تاشقند فوٹوگرافی کا گھر",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/e37a4cfd-bceb-49a4-ba1a-d62be9856ce7/-/preview/339x240/",
-    alt: "image-Ташкентский Дом Фотографии",
-    text: {
-      ru: "Ташкентский Дом Фотографии",
-      uz: "Toshkent Fotosuratlar Uyi",
-      en: "Tashkent House of Photography",
-      ur: "تاشقند فوٹوگرافی کا گھر",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/fb7602ab-840c-4f7b-8f48-0adf4693c533/-/preview/680x320/",
-    alt: "image-Площадь Независимости",
-    text: {
-      ru: "Площадь Независимости",
-      uz: "Mustaqillik maydoni",
-      en: "Independence Square",
-      ur: "آزادی کا میدان",
-    },
-  },
-  {
-    url: "https://ucarecdn.com/857a4779-4d9d-45da-9779-7a470d24bedb/-/preview/339x240/",
-    alt: "image-Виртуальные галереи",
-    text: {
-      ru: "Виртуальные галереи",
-      uz: "Virtual galereyalar",
-      en: "Virtual Galleries",
-      ur: "ورچوئل گیلریاں",
-    },
-  },
-];
+
 
 export const LANDMARK_DESCRIPTION = {
   ru: "Узбекистан – страна с древней историей и богатой культурой. Богатое архитектурное наследие, бесчисленное количество исторических памятников, восточные базары и современные торговые центры, уникальные заповедники и природные парки, санатории и зоны отдыха – в нашей стране каждый сможет найти, что посмотреть и где отдохнуть. Представляем вам самые топовые культурные, архитектурно-исторические, развлекательные и природные достопримечательности Узбекистана.",

@@ -1,13 +1,31 @@
+"use client"
+import { useState , useEffect } from "react";
+
 import { Breadcrumb } from "@/ui/breadcrumb";
 import { useLocale, useTranslations } from "next-intl";
 import Faq from "@/ui/faq";
-import { FAQ_DATA } from "@/constants/faq";
 import { TRADE_CONTENT } from "@/constants/trade";
+import { Axios } from "@/utils/api";
+import { IFaqData } from "@/types/faq";
+
 
 export const TradeAgreementsMain = () => {
-  const t = useTranslations();
-  const locale = useLocale();
+ 
 
+ const t = useTranslations();
+  const locale = useLocale();
+  const [AllFaqs , setAllFaqs] = useState<IFaqData[]>([])
+
+  useEffect(() =>  {
+    const FetchAllFaqs = async () => {
+      const res = await Axios.get(`/faq?lang=${locale}`)
+      setAllFaqs(res.data.data)
+    }
+    FetchAllFaqs()
+  } , [])
+
+
+  
   return (
     <>
       <section className="px-[20px] lg:px-[120px] mt-[24px] pb-[80px] lg:pb-[120px]">
@@ -62,7 +80,7 @@ export const TradeAgreementsMain = () => {
           <h1 aria-label="FAQ" className="text-[24px] lg:text-[32px]">
             FAQ
           </h1>
-          <Faq data={FAQ_DATA} />
+          <Faq data={AllFaqs} />
         </div>
       </section>
     </>

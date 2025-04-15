@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/ui/breadcrumb";
-import { useLocale, useTranslations } from "next-intl";
+import {useTranslations } from "next-intl";
 import { ThemeContentItem } from "@/ui/ThemeContent";
 import { ECONOMY_NAV } from "@/constants/economy";
 

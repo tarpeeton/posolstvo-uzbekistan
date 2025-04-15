@@ -10,6 +10,10 @@
     "tourism": "Tourism",
     "contactsForm": "Contacts & Inquiry Form"
   },
+   "toast": {
+    "success": "Your message has been sent successfully!",
+    "error": "Failed to send your message. Please try again."
+  },
   "title": "Embassy of the Republic of Uzbekistan \n in the Islamic Republic of Pakistan",
   "search": "Search",
   "topics": "Current Topics",
