@@ -16,7 +16,7 @@ import { TMultiLang } from "@/types/multiLang"
         en: "Visas",
         ur: "ویزے"
       },
-      href: "/visas",
+      href: "/consular/visas",
       imageUrl: "https://ucarecdn.com/6533c890-22ef-4fb6-acad-ce04064d64a1/-/preview/512x512/"
     },
     {
@@ -26,8 +26,8 @@ import { TMultiLang } from "@/types/multiLang"
         en: "Invest in Uzbekistan",
         ur: "ازبکستان میں سرمایہ کاری کریں"
       },
-      href: "/invest",
-      imageUrl: "https://ucarecdn.com/6533c890-22ef-4fb6-acad-ce04064d64a1/-/preview/512x512/"
+      href: "/economy/investments",
+      imageUrl: "https://ucarecdn.com/3476e2a0-27d5-4d1b-86e4-325ca3f4f149/-/preview/24x24/"
     },
     {
       title: {
@@ -36,8 +36,8 @@ import { TMultiLang } from "@/types/multiLang"
         en: "Consular Services",
         ur: "قونصلر خدمات"
       },
-      href: "/consular-services",
-      imageUrl: "https://ucarecdn.com/6533c890-22ef-4fb6-acad-ce04064d64a1/-/preview/512x512/"
+      href: "/consular",
+      imageUrl: "https://ucarecdn.com/201c3ec3-c053-4205-8d78-6d2ff2ced5aa/-/preview/24x24/"
     }
   ];
   

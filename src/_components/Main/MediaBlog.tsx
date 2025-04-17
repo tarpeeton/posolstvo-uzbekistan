@@ -52,6 +52,8 @@ console.log(links)
                 key={index}
                 className="!h-[350px] lg:!h-[220px] !w-full"
                 playsInline
+              controls
+
                 url={link} 
               />
             ) : null

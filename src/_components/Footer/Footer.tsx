@@ -9,12 +9,16 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { useState, ChangeEvent } from "react";
-import axios from "axios";
+  import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 import { FaTelegramPlane } from "react-icons/fa";
+import { Axios } from "@/utils/api";
 
 type IFormType = {
-  fullName: string;
+  full_name: string;
   email: string;
 };
 
@@ -24,7 +28,7 @@ export const Footer = () => {
   const [sending, setSending] = useState(false);
 
   const [formData, setFormData] = useState<IFormType>({
-    fullName: "",
+    full_name: "",
     email: "",
   });
 
@@ -37,18 +41,22 @@ export const Footer = () => {
     e.preventDefault();
     setSending(true);
     try {
-      const response = await axios.post("/api/feedback", formData);
+      const response = await Axios.post("/callback", formData);
       console.log("Response:", response.data);
-      setFormData({ fullName: "", email: "" });
+      setFormData({ full_name: "", email: "" });
       setSending(false);
+toast.success(t("toast.success"));
     } catch (error) {
       console.error("Error submitting form:", error);
       setSending(false);
+      toast.error(t("toast.error"));
     }
   };
 
   return (
     <footer>
+                <ToastContainer position="top-right" autoClose={4200} />
+
       <div className="flex flex-col lg:flex-row lg:items-center px-[20px] gap-[40px] lg:px-[120px] py-[35px] bg-[#0E0F18]">
         <div>
           <div className="flex flex-row items-center gap-2.5">
@@ -192,8 +200,8 @@ export const Footer = () => {
             <div>
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
-                  value={formData.fullName}
-                  onChange={handleChange("fullName")}
+                  value={formData.full_name}
+                  onChange={handleChange("full_name")}
                   type="text"
                   required
                   placeholder={t("fullName")}
