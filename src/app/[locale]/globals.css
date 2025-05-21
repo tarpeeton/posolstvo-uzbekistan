@@ -58,6 +58,18 @@ body {
 }
 
 
+
+
+
+@media (min-width: 1920) {
+  .con {
+  padding:  0  250px 0 250px;
+}
+
+}
+
+
+
 @layer components {
   .title-text {
     @apply text-[20px] md:text-[24px] font-medium text-[#000000];

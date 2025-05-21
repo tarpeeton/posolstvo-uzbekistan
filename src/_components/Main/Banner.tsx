@@ -11,18 +11,15 @@ import { LuCalendarDays } from "react-icons/lu";
 import { sliceText } from "@/utils/sliceText";
 import { useLocale } from "next-intl";
 import { GrPrevious, GrNext } from "react-icons/gr";
-import { slidesData } from "@/constants/news";
 import useSwiperNavigation from "@/utils/swiper";
 import { Link } from "@/i18n/routing";
 import { Axios } from "@/utils/api";
-import { IPost } from "@/types/posts";
 import dayjs from "dayjs";
+import { IBanner } from '../../types/banner';
 
 export const NewsBanner = () => {
   const locale = useLocale();
-
   const { swiperRef, handlePrev, handleNext } = useSwiperNavigation();
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   function handleInit(swiper: any) {
@@ -37,19 +34,19 @@ export const NewsBanner = () => {
     swiperRef.current.slideTo(index);
   }
 
-  const [blogs, setBlogs] = useState<IPost[]>([]);
+  const [banners, setBanner] = useState<IBanner[]>([]);
 
   useEffect(() => {
-    const fetchFilteredMediaBlog = async () => {
+    const fetchBanner = async () => {
       try {
-        const res = await Axios.get(`/post?lang=${locale}`);
-        setBlogs(res.data);
+        const res = await Axios.get(`/banner?page=main&lang=${locale}`);
+        setBanner(res.data.data);
       } catch (error) {
         console.error("Failed to fetch media blog:", error);
       }
     };
 
-    fetchFilteredMediaBlog();
+    fetchBanner();
   }, [locale]);
 
   return (
@@ -66,10 +63,10 @@ export const NewsBanner = () => {
         onInit={handleInit}
         onSlideChange={handleSlideChange}
       >
-        {blogs.map((slide) => (
+        {banners.map((slide) => (
           <SwiperSlide key={slide.id}>
             <Link
-              href={`/news/${slide.slug}`}
+              href={`${slide.url}`}
               aria-label={`Slide ${slide.id}`}
               className="flex flex-col-reverse items-start gap-4 
                          lg:flex-row lg:items-center mx-2 lg:mx-0"
@@ -79,7 +76,7 @@ export const NewsBanner = () => {
                   {sliceText(slide.title, 120)}
                 </h2>
                 <p className="text-sm lg:text-[20px] text-gray-600 mb-3 lg:mb-4">
-                  {sliceText(slide.description, 100)}
+                  {sliceText(slide.description, 300)}
                 </p>
                 <time className="text-xs items-center text-gray-500 flex flex-row gap-2 lg:text-[16px]">
                   {" "}
@@ -91,7 +88,7 @@ export const NewsBanner = () => {
               <div className="w-full md:w-[50%] flex justify-center items-center">
                 <div className="w-full h-[250px] rounded-[4px] overflow-hidden  lg:h-[380px] bg-gray-300 flex items-center justify-center">
                   <Image
-                    src={slide.img}
+                    src={slide.image}
                     alt={slide.title}
                     width={400}
                     height={250}
@@ -122,7 +119,7 @@ export const NewsBanner = () => {
       </button>
       {/* CUSTOM PAGINATION  */}
       <div className="flex md:relative md:top-[10px] w-[90%] md:w-auto absolute z-50 space-x-1  top-[270px] gap-2 justify-center mt-4">
-        {blogs.map((_, index) => (
+        {banners.map((_, index) => (
           <button
             key={index}
             aria-label={`Go to slide ${index + 1}`}

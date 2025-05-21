@@ -42,7 +42,6 @@ export const Footer = () => {
     setSending(true);
     try {
       const response = await Axios.post("/callback", formData);
-      console.log("Response:", response.data);
       setFormData({ full_name: "", email: "" });
       setSending(false);
 toast.success(t("toast.success"));

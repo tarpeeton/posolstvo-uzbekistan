@@ -11,6 +11,14 @@ export function generateStaticParams() {
   return [{ locale: "ru" }, { locale: "uz" }]
 }
 
+
+export const metadata = {
+  icons: {
+    icon: "https://ucarecdn.com/28342f11-67d7-4679-9acc-ed57c118d796/-/preview/45x45/",
+  },
+}
+
+
 export default async function RootLayout({
   children,
   params,

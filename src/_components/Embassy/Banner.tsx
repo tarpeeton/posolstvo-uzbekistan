@@ -2,7 +2,7 @@
 
 "use client";
 
-import {  useState } from "react";
+import {  useState , useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -13,12 +13,18 @@ import { LuCalendarDays } from "react-icons/lu";
 import { sliceText } from "@/utils/sliceText";
 import { useLocale } from "next-intl";
 import { GrPrevious, GrNext } from "react-icons/gr";
-import { slidesData } from "@/constants/news";
 import useSwiperNavigation from "@/utils/swiper";
 import { Link } from "@/i18n/routing";
+import { IBanner } from "@/types/banner";
+import { Axios } from "@/utils/api";
+import dayjs from "dayjs";
+
+
+
 
 export const EmbassyBanner = () => {
   const locale = useLocale();
+  const [banners, setBanner] = useState<IBanner[]>([]);
 
   const { swiperRef, handlePrev, handleNext } = useSwiperNavigation();
 
@@ -35,6 +41,21 @@ export const EmbassyBanner = () => {
   function goToSlide(index: number) {
     swiperRef.current.slideTo(index);
   }
+
+useEffect(() => {
+    const fetchBanner = async () => {
+      try {
+        const res = await Axios.get(`/banner?page=news&lang=${locale}`);
+        setBanner(res.data.data);
+      } catch (error) {
+        console.error("Failed to fetch media blog:", error);
+      }
+    };
+
+    fetchBanner();
+  }, [locale]);
+
+
   return (
     <section
       aria-label="News Carousel"
@@ -49,32 +70,32 @@ export const EmbassyBanner = () => {
         onInit={handleInit}
         onSlideChange={handleSlideChange}
       >
-        {slidesData.map((slide) => (
+        {banners.map((slide) => (
           <SwiperSlide key={slide.id}>
             <Link
-              href={`/news/ss`}
+              href={slide.url}
               aria-label={`Slide ${slide.id}`}
               className="flex flex-col-reverse items-start gap-4 
                          lg:flex-row lg:items-center mx-2 lg:mx-0"
             >
               <div className="flex-1 lg:pl-[60px] flex flex-col justify-center mt-4 lg:mt-0">
                 <h2 className="text-xl lg:text-[32px] font-semibold text-gray-900 mb-2 lg:mb-4">
-                  {sliceText(slide.title[locale], 120)}
+                  {sliceText(slide.title, 120)}
                 </h2>
                 <p className="text-sm lg:text-[20px] text-gray-600 mb-3 lg:mb-4">
-                  {sliceText(slide.description[locale], 100)}
+                  {sliceText(slide.description, 100)}
                 </p>
                 <time className="text-xs items-center text-gray-500 flex flex-row gap-2 lg:text-[16px]">
                   {" "}
-                  <LuCalendarDays /> {slide.date}
+                  <LuCalendarDays />   {dayjs(slide.created_at).format("YYYY.MM.DD")}
                 </time>
               </div>
               {/* PREV && NEXT BUTTON */}
               <div className="w-full md:w-[50%] flex justify-center items-center">
                 <div className="w-full h-[250px] rounded-[4px] overflow-hidden  lg:h-[380px] bg-gray-300 flex items-center justify-center">
                   <Image
-                    src={slide.imageUrl}
-                    alt={slide.title[locale]}
+                    src={slide.image}
+                    alt={slide.title + "image"}
                     width={400}
                     height={250}
                     quality={100}
@@ -104,7 +125,7 @@ export const EmbassyBanner = () => {
       </button>
       {/* CUSTOM PAGINATION  */}
       <div className="flex md:relative md:top-[10px] w-[90%] md:w-auto absolute z-50 space-x-1  top-[270px] gap-2 justify-center mt-4">
-        {slidesData.map((_, index) => (
+        {banners.map((_, index) => (
           <button
             key={index}
             aria-label={`Go to slide ${index + 1}`}
