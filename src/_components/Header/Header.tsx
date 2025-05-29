@@ -88,7 +88,7 @@ export function Header() {
           <LanguageSwitcher mobile={false} currentLocale={locale} />
         </div>
       </div>
-      <div className="relative md:hidden w-full mt-2 px-[20px]">
+      {/* <div className="relative md:hidden w-full mt-2 px-[20px]">
         <IoIosSearch
           size={20}
           className="absolute left-[30px] top-1/2 -translate-y-1/2 text-gray-500"
@@ -99,7 +99,7 @@ export function Header() {
           className="w-full h-10 pl-10 pr-3 rounded-md border border-gray-300 text-gray-900 
                focus:outline-none focus:border-blue-500 placeholder-gray-400"
         />
-      </div>
+      </div> */}
       <Navbar />
     </header>
   );
