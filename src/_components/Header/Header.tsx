@@ -73,7 +73,7 @@ export function Header() {
           <MobileMenu />
         </div>
         <div className="hidden md:flex px-5 flex-row items-center gap-5">
-          <div className="relative w-[300px]">
+          {/* <div className="relative w-[300px]">
             <IoIosSearch
               size={20}
               className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
@@ -84,7 +84,7 @@ export function Header() {
               className="w-full h-10 pl-10 pr-3 rounded-md border border-gray-300 text-gray-900 
                    focus:outline-none focus:border-blue-500 placeholder-gray-400"
             />
-          </div>
+          </div> */}
           <LanguageSwitcher mobile={false} currentLocale={locale} />
         </div>
       </div>
